@@ -1,107 +1,111 @@
-/* NAVBAR */  
-let navbar = document.querySelector(".cg-navbar")
-document.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        navbar.classList.remove("cg-navbar-scroll")
-    } else{
-        navbar.classList.add("cg-navbar-scroll")
-    }
-})
+(function ($) {
+    "use strict";
 
-/* LAVORI */
-fetch("./annunci.json")
-.then((response) => response.json())
-.then((annunci) => {
-    let categorie = []
-    annunci.forEach(annuncio => {
-        if (!categorie.includes(annuncio.category)){
-            categorie.push(annuncio.category)
+    // Spinner
+    var spinner = function () {
+        setTimeout(function () {
+            if ($('#spinner').length > 0) {
+                $('#spinner').removeClass('show');
+            }
+        }, 1);
+    };
+    spinner(0);
+    
+    
+    // Initiate the wowjs
+    new WOW().init();
+    
+    
+   // Back to top button
+   $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+        $('.back-to-top').fadeIn('slow');
+    } else {
+        $('.back-to-top').fadeOut('slow');
+    }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+
+    // Modal Video
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
+
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        })
+
+        $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+    });
+
+
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
+
+    // Testimonial carousel
+    $(".testimonial-carousel-1").owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 25,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 10000,
+        autoplayHoverPause: false,
+        responsive: {
+            0:{
+                items:1
+            },
+            575:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            991:{
+                items:3
+            }
         }
     });
 
-    let firstWrapperCategories = document.querySelector("#firstWrapperCategories")
-    let firstCategories = [
-        categorie[0],
-        categorie[1]
-    ]
-    firstCategories.forEach((category) => {
-        let categoryElement = createCategoryElement(category)
-        firstWrapperCategories.appendChild(categoryElement)
-    })
-    
-    let secondWrapperCategories = document.querySelector("#secondWrapperCategories")
-    let secondCategories = [
-        categorie[2],
-        categorie[3]
-    ]
-    secondCategories.forEach((category) => {
-        let categoryElement = createCategoryElement(category)
-        secondWrapperCategories.appendChild(categoryElement)
-    })
-    
-    let thirdWrapperCategories = document.querySelector("#thirdWrapperCategories")
-    let thirdCategories = [
-        categorie[4],
-        categorie[5]
-    ]
-    thirdCategories.forEach((category) => {
-        let categoryElement = createCategoryElement(category)
-        thirdWrapperCategories.appendChild(categoryElement)
-    })
-    
-    let slidesWrapper = document.querySelector(".glide .glide__slides")
-    let important = annunci
-    important.forEach((annuncio) => {
-        let annuncioSlideElement = createAnnuncioElement(annuncio)
-        slidesWrapper.appendChild(annuncioSlideElement)
-    })
-    
-    let glide = new Glide(".glide", {
-        type: "carousel",
-        perView: 3,
-        autoplay: 1000,
-        breakpoints: {
-            "992": {
-                perView: 2
+    $(".testimonial-carousel-2").owlCarousel({
+        loop: true,
+        dots: false,
+        rtl: true,
+        margin: 25,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 10000,
+        autoplayHoverPause: false,
+        responsive: {
+            0:{
+                items:1
             },
-            "576": {
-                perView: 1
+            575:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            991:{
+                items:3
             }
         }
-    }).mount()
-})
+    });
 
-function createCategoryElement(category) {
-    let categoryElement = document.createElement("div")
-    categoryElement.classList.add("card-section")
-    categoryElement.innerHTML = `
-    <div>
-    <a class="link-footer" href="/servizi">${category}</a
-    </div>
-    `
-    return categoryElement
-}
+})(jQuery);
 
-function createAnnuncioElement(annuncio) {
-    let categoryElement = document.createElement("li")
-    categoryElement.classList.add("glide__slide")
-    categoryElement.innerHTML = `
-    <div class="portfolio-inner">
-        <img src="${annuncio.img}" class="card-img-top w-100" height="250" style="object-fit: cover;" alt="${annuncio.alt}">
-        <h6 class="card-title mb-2 mt-2 fw-light">${annuncio.category}</h6>
-            <p class="card-text fw-lighter">${annuncio.where}</p>
-            <div class="portfolio-text text-start bg-white p-4">
-                <div>
-                    <h6>Interventi effettuati:</h6>
-                    <p class="lh-sm fw-lighter"><i class="fa-solid fa-caret-right me-2"></i>
-                    ${annuncio.description}
-                    </p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-square secondary-icone-social rounded-circle mx-1" href="/work"><i class="fa fa-eye"></i></a>
-                </div>
-            </div>
-    </div>  
-    `
-    return categoryElement
-}

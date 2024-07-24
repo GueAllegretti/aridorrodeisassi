@@ -14,3 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [PublicController::class, 'index'])->name('index');
+
+//routes pages
+Route::get('/cookies', [PublicController::class, 'cookies'])->name('cookies');
+Route::get('/casa', [PublicController::class, 'casa'])->name('casa');
+Route::get('/escursioni', [PublicController::class, 'escursioni'])->name('escursioni');
+Route::get('/posizione', [PublicController::class, 'posizione'])->name('posizione');
+Route::get('/contact', [PublicController::class, 'contact'])->name('contact');

@@ -3269,78 +3269,104 @@ __webpack_require__(/*! ./script */ "./resources/js/script.js");
   \********************************/
 /***/ (() => {
 
-/* NAVBAR */
-var navbar = document.querySelector(".cg-navbar");
-document.addEventListener("scroll", function () {
-  if (window.scrollY > 50) {
-    navbar.classList.remove("cg-navbar-scroll");
-  } else {
-    navbar.classList.add("cg-navbar-scroll");
-  }
-});
-/* LAVORI */
+(function ($) {
+  "use strict"; // Spinner
 
-fetch("./annunci.json").then(function (response) {
-  return response.json();
-}).then(function (annunci) {
-  var categorie = [];
-  annunci.forEach(function (annuncio) {
-    if (!categorie.includes(annuncio.category)) {
-      categorie.push(annuncio.category);
+  var spinner = function spinner() {
+    setTimeout(function () {
+      if ($('#spinner').length > 0) {
+        $('#spinner').removeClass('show');
+      }
+    }, 1);
+  };
+
+  spinner(0); // Initiate the wowjs
+
+  new WOW().init(); // Back to top button
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
     }
   });
-  var firstWrapperCategories = document.querySelector("#firstWrapperCategories");
-  var firstCategories = [categorie[0], categorie[1]];
-  firstCategories.forEach(function (category) {
-    var categoryElement = createCategoryElement(category);
-    firstWrapperCategories.appendChild(categoryElement);
-  });
-  var secondWrapperCategories = document.querySelector("#secondWrapperCategories");
-  var secondCategories = [categorie[2], categorie[3]];
-  secondCategories.forEach(function (category) {
-    var categoryElement = createCategoryElement(category);
-    secondWrapperCategories.appendChild(categoryElement);
-  });
-  var thirdWrapperCategories = document.querySelector("#thirdWrapperCategories");
-  var thirdCategories = [categorie[4], categorie[5]];
-  thirdCategories.forEach(function (category) {
-    var categoryElement = createCategoryElement(category);
-    thirdWrapperCategories.appendChild(categoryElement);
-  });
-  var slidesWrapper = document.querySelector(".glide .glide__slides");
-  var important = annunci;
-  important.forEach(function (annuncio) {
-    var annuncioSlideElement = createAnnuncioElement(annuncio);
-    slidesWrapper.appendChild(annuncioSlideElement);
-  });
-  var glide = new Glide(".glide", {
-    type: "carousel",
-    perView: 3,
-    autoplay: 1000,
-    breakpoints: {
-      "992": {
-        perView: 2
+  $('.back-to-top').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  }); // Modal Video
+
+  $(document).ready(function () {
+    var $videoSrc;
+    $('.btn-play').click(function () {
+      $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+    $('#videoModal').on('shown.bs.modal', function (e) {
+      $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    });
+    $('#videoModal').on('hide.bs.modal', function (e) {
+      $("#video").attr('src', $videoSrc);
+    });
+  }); // Facts counter
+
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000
+  }); // Testimonial carousel
+
+  $(".testimonial-carousel-1").owlCarousel({
+    loop: true,
+    dots: false,
+    margin: 25,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 0,
+    autoplaySpeed: 10000,
+    autoplayHoverPause: false,
+    responsive: {
+      0: {
+        items: 1
       },
-      "576": {
-        perView: 1
+      575: {
+        items: 1
+      },
+      767: {
+        items: 2
+      },
+      991: {
+        items: 3
       }
     }
-  }).mount();
-});
-
-function createCategoryElement(category) {
-  var categoryElement = document.createElement("div");
-  categoryElement.classList.add("card-section");
-  categoryElement.innerHTML = "\n    <div>\n    <a class=\"link-footer\" href=\"/servizi\">".concat(category, "</a\n    </div>\n    ");
-  return categoryElement;
-}
-
-function createAnnuncioElement(annuncio) {
-  var categoryElement = document.createElement("li");
-  categoryElement.classList.add("glide__slide");
-  categoryElement.innerHTML = "\n    <div class=\"portfolio-inner\">\n        <img src=\"".concat(annuncio.img, "\" class=\"card-img-top w-100\" height=\"250\" style=\"object-fit: cover;\" alt=\"").concat(annuncio.alt, "\">\n        <h6 class=\"card-title mb-2 mt-2 fw-light\">").concat(annuncio.category, "</h6>\n            <p class=\"card-text fw-lighter\">").concat(annuncio.where, "</p>\n            <div class=\"portfolio-text text-start bg-white p-4\">\n                <div>\n                    <h6>Interventi effettuati:</h6>\n                    <p class=\"lh-sm fw-lighter\"><i class=\"fa-solid fa-caret-right me-2\"></i>\n                    ").concat(annuncio.description, "\n                    </p>\n                </div>\n                <div class=\"d-flex justify-content-center\">\n                    <a class=\"btn btn-square secondary-icone-social rounded-circle mx-1\" href=\"/work\"><i class=\"fa fa-eye\"></i></a>\n                </div>\n            </div>\n    </div>  \n    ");
-  return categoryElement;
-}
+  });
+  $(".testimonial-carousel-2").owlCarousel({
+    loop: true,
+    dots: false,
+    rtl: true,
+    margin: 25,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 0,
+    autoplaySpeed: 10000,
+    autoplayHoverPause: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      575: {
+        items: 1
+      },
+      767: {
+        items: 2
+      },
+      991: {
+        items: 3
+      }
+    }
+  });
+})(jQuery);
 
 /***/ }),
 
