@@ -9,7 +9,7 @@
                     <div class="container text-center animate__animated animate__bounceInDown">
                         <h1 class="display-1 mb-4">Casa</h1>
                         <ol class="breadcrumb justify-content-center mb-0 animate__animated animate__bounceInDown">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
                             <li class="breadcrumb-item text-dark" aria-current="page">Casa</li>
                         </ol>
                     </div>

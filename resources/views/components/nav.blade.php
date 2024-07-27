@@ -19,7 +19,7 @@
             <a class="nav-link {{(Route::currentRouteName() == 'escursioni') ? 'active nav-color-active' : ''}}" href="{{route('escursioni')}}">Escursioni</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{(Route::currentRouteName() == 'posizione') ? 'active nav-color-active' : ''}}" href="{{route('posizione')}}">Posizione</a>
+            <a class="nav-link {{(Route::currentRouteName() == 'posizione') ? 'active nav-color-active' : ''}}" href="{{route('posizione')}}">Nei dirtorni</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{(Route::currentRouteName() == 'contact') ? 'active nav-color-active' : ''}}" href="{{route('contact')}}">Contatti</a>
