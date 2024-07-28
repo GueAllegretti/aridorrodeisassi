@@ -41,7 +41,6 @@
         </div>
     </div>
 </section>
-
 <!-- Casa End -->
 
 {{-- Posizione --}}
@@ -60,12 +59,11 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center mb-4">
-                <img src="img/posizione-2.jpeg" class="img-fluid rounded" alt="Right Image">
+                <img src="img/place.png" class="img-fluid rounded" alt="Right Image">
             </div>
         </div>
     </div>
 </section>
-
 {{-- Posizione end --}}
 
 
@@ -76,7 +74,8 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="text-container">
                     <h1 class="display-5 mb-4">Lorem ipsum dolor</h1>
-                    <p class="mb-4">A due passi dai Sassi di Matera, la Casa Vacanze "A Ridosso dei Sassi" offre un confortevole alloggio familiare a piano terra con ingresso indipendente e ampio parcheggio gratuito disponibile. C'è anche la possibilità di un parcheggio privato a pagamento. L'alloggio è ad uso esclusivo e personale e sono presenti due camere da letto, un soggiorno/cucina e due bagni.</p>
+                    <p class="mb-4">Presso la nostra struttura è possibile organizzare Tour privati nel Parco UNESCO della Murgia Materana con finale nel belvedere con vista favolosa su tutti i Rioni Sassi. 
+                    </p>
                     <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Scopri di più<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
@@ -97,16 +96,18 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
             <div class="modal-header">
-                <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
                 <div class="ratio ratio-16x9">
-                    <iframe id="videoModalIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://youtu.be/ad_qInb1FFw" id="video" allowfullscreen allowscriptaccess="always"
+                        allow="autoplay"></iframe>
                 </div>
             </div>
         </div>

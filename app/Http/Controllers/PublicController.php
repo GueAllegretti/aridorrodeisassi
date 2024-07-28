@@ -17,7 +17,27 @@ class PublicController extends Controller
     }
 
     public function escursioni() {
-        return view ('escursioni');
+        $works = [
+            [
+                'id' => 1, 
+                'title' => 'Lorem1', 
+                'alt' => 'Lorem', 
+                'img' => '/img/place.png'
+            ],
+            [
+                'id' => 2, 
+                'title' => 'Lorem2', 
+                'alt' => 'Lorem', 
+                'img' => '/img/place.png'
+            ],
+            [
+                'id' => 3, 
+                'title' => 'Lorem3', 
+                'alt' => 'Lorem', 
+                'img' => '/img/place.png'
+            ]
+        ];
+        return view ('escursioni', ['works' => $works]);
     }
 
     public function posizione() {

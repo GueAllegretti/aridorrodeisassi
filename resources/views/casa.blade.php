@@ -182,7 +182,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-3" data-wow-delay="0.5s">
+                                <div class="col-md-6 col-lg-3">
                                     <div class="event-img position-relative">
                                         <img class="img-fluid rounded w-100" src="img/camera-3.jpg" alt="">
                                         <div class="event-overlay d-flex flex-column p-4">
@@ -216,7 +216,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-3" data-wow-delay="0.5s">
+                                <div class="col-md-6 col-lg-3">
                                     <div class="event-img position-relative">
                                         <img class="img-fluid rounded w-100" src="img/cucina-1.jpg" alt="">
                                         <div class="event-overlay d-flex flex-column p-4">
@@ -282,17 +282,17 @@
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
                                     <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                        <img class="img-fluid rounded w-100" src="img/bagno-1.jpg" alt="">
                                         <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/bagno-1.jpg" data-lightbox="bagno-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                        <img class="img-fluid rounded w-100" src="img/bagno-2.jpg" alt="">
                                         <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/bagno-2.jpg" data-lightbox="bagno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>

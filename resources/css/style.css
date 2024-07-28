@@ -448,6 +448,52 @@ color: var(--light);
 }
 /*** Services End ***/
 
+/* WORKS */
+.projects .project-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projects .project-content img {
+    transition: 0.3s;
+  }
+  
+  .projects .project-content .project-info {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .project-info p {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    color: var(--dark);
+  }
+  
+  .zoom {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    color: var(--secondary);
+    transition: 0.3s;
+  }
+  
+  .zoom:hover {
+    color: var(--secondary);
+  }
+  
+  .projects .project-content:hover .project-info {
+    opacity: 1;
+  }
+  
+  .projects .project-content:hover img {
+    transform: scale(1.1);
+  }
 
 /*** Menu Start ***/
 .menu .nav-item a.active {
