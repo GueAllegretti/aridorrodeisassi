@@ -13,7 +13,7 @@
             <a class="nav-link {{(Route::currentRouteName() == 'index') ? 'active nav-color-active' : ''}}" href="{{route('index')}}" href="{{route('index')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{(Route::currentRouteName() == 'casa') ? 'active nav-color-active' : ''}}" href="{{route('casa')}}">Casa</a>
+            <a class="nav-link {{(Route::currentRouteName() == 'casa') ? 'active nav-color-active' : ''}}" href="{{route('casa')}}">Struttura</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{(Route::currentRouteName() == 'escursioni') ? 'active nav-color-active' : ''}}" href="{{route('escursioni')}}">Escursioni</a>

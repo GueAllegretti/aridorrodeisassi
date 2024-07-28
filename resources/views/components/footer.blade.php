@@ -1,31 +1,39 @@
-<!-- Footer Start -->
-<div class="container-fluid footer py-6 my-6 mb-0 bg-light">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6 col-md-6">
-              <div class="footer-item">
-                  <h3 class="text-primary">A ridosso dei sassi <br> <span class="text-dark"> Casa vacanze</span></h3>
-                  <div class="footer-icon d-flex">
-                      <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
-                  </div>
+<footer id="footer" class="footer">
+
+    <div class="footer-content position-relative bg-light">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-12">
+            <div class="footer-info">
+              <div class="text-center p-3">
+                <h6 class="fw-light">A ridosso dei sassi</h6>
+                <p class="fw-lighter">Vico Lucana 10</p>
+                <p class="fw-lighter">75100 – Matera</p>
+                <div class="social-links d-flex align-items-center justify-content-center m-2">
+                  <a href="https://www.facebook.com/profile.php?id=61561790943842" target="_blank" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="" target="blank"  class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="http://api.whatsapp.com/send?phone=+393881581971&text=Salve, vorrei avere maggiori informazioni" target="blank" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="mailto:aridossodeisassi@gmail.com?subject=Richiesta informazioni" target="blank" class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+                <a href="{{route('cookies')}}" class="link-footer me-4 fw-light">Cookies Policy</a>
+                <a href="mailto:info@liviimpianti.it?subject=Richiesta informazioni" class="link-footer fw-light">aridossodeisassi@gmail.com</a>
               </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-              <div class="footer-item">
-                  <div class="d-flex flex-column align-items-start">
-                      <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Vico Lucana 10, Matera, Italy</p>
-                      <p><i class="fa fa-phone-alt text-primary me-2"></i> (+39) 388 158 1971</p>
-                      <p><i class="fas fa-envelope text-primary me-2"></i> aridossodeisassi@gmail.com</p>
-                  </div>
               </div>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 col-md-6">
-            <div class="d-flex flex-column align-item-center">
-                <p>Powered &#10084; GA</p>
             </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="credits pt-2 pb-2">
+          Powered &#10084; GA
+        </div>
+      </div>
+    </div>
+  
+  </footer>
