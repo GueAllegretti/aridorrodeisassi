@@ -126,7 +126,7 @@
 </div>
 <!-- Service End -->
 
-      <!-- Events Start -->
+      <!-- foto Start -->
 <div class="container event py-5">
     <div class="container">
         <div class="text-center">
@@ -354,6 +354,6 @@
         </div>
     </div>
 </div>
-<!-- Events End -->
+<!-- foto End -->
 
   </x-layout>
