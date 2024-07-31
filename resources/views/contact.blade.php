@@ -3,16 +3,16 @@
 
   <x-slot name="title">Contatti</x-slot>
 
-  <div class="container-fluid bg-breadcrumb page-header py-5">
-    <div class="container pt-5 pb-2">
-        <h1 class="display-3 text-dark mb-2 mt-4">Contatti</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
-                <li class="breadcrumb-item text-dark active" aria-current="page">Contatti</li>
-            </ol>
-        </nav>
-    </div>
+  <div class="bg-breadcrumb d-flex align-items-center page-header py-5">
+  <div class="container position-relative d-flex flex-column align-items-center pt-5 pb-2" data-aos="fade">
+    <h2 class="mt-5 display-4">Contatti</h2>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
+          <li class="breadcrumb-item text-dark fw-bold fst-italic active" aria-current="page">Contatti</li>
+      </ol>
+  </nav>
+  </div>
 </div>
 
 

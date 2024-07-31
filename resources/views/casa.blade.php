@@ -3,19 +3,20 @@
 
 
 <x-layout>
-  <x-slot name="title">Strutura</x-slot>
+  <x-slot name="title">Struttura</x-slot>
 
-        <div class="container-fluid bg-breadcrumb page-header py-5">
-            <div class="container pt-5 pb-2">
-                <h1 class="display-3 text-dark mb-2 mt-4">Struttura</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
-                        <li class="breadcrumb-item text-dark active" aria-current="page">Struttura</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
+<div class="bg-breadcrumb d-flex align-items-center page-header py-5">
+    <div class="container position-relative d-flex flex-column align-items-center pt-5 pb-2" data-aos="fade">
+      <h2 class="mt-5 display-4">Struttura</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
+            <li class="breadcrumb-item text-dark fw-bold fst-italic active" aria-current="page">Struttura</li>
+        </ol>
+    </nav>
+    </div>
+</div>
+
 
 
         <!-- About Satrt -->
@@ -24,28 +25,41 @@
               <div class="row g-5 align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="image-container-casa image-casa">
-                        <img src="img/camera-1.jpg" class="img-fluid rounded image-casa-page" alt="">
+                        <img src="img/camera-1.webp" class="img-fluid rounded image-casa-page" alt="">
                         <div class="image-overlay"></div>
                         <div class="fade-circle-casa"></div>
                         <div class="small-circle-casa"></div>
                     </div>
                 </div>
                   <div class="col-lg-7">
-                      <h1 class="display-5 mb-4">Trusted By 200 + satisfied clients</h1>
-                      <p class="mb-4">A due passi dai Sassi di Matera la Casa Vacanze "A Ridosso dei Sassi" offre un confortevole alloggio famigliare a piano terra con ingresso indipendente e con ampio parcheggio gratuito disponibile.
-                        <br>Sono presenti due camere da letto, zona living e 2 bagni.</p>
+                      <h1 class="display-5 mb-4">A Ridosso dei Sassi</h1>
+                      <h6 class="mb-4">Un Rifugio incantevole tra Storia e Comfort</h6>
+                      <p class="mb-4">
+                        Situata nel cuore di un paesaggio unico, la nostra dimora è il rifugio ideale per chi vuole soggiornare a due passi Sassi.
+            
+                        All'interno, troverete una spaziosa cucina completamente attrezzata, due bagni, dotati di ogni comfort per garantire il massimo del relax durante il vostro soggiorno.
+                        <br><br>
+                        Le due camere da letto, arredate con gusto e attenzione ai dettagli, offrono spazi accoglienti e rilassanti, dove potrete riposare serenamente dopo una giornata di esplorazioni. La posizione privilegiata della casa, "A ridosso dei sassi", permette di immergersi nella storia e nella cultura locali, con facile accesso alle meraviglie del territorio circostante.
+                        <br><br>
+                        Scegliendo "A Ridosso dei Sassi," sceglierete un'esperienza indimenticabile, dove il fascino del passato incontra il comfort del presente. Vi aspettiamo per accogliervi con calore e farvi sentire come a casa vostra.</p>
                       <div class="row g-4 text-dark mb-5">
-                          <div class="col-sm-6">
-                              <i class="fa-solid fa-house me-2"></i>60 m² superficie
+                          <div class="col-sm-6"><p>
+                              <i class="fa-solid fa-house me-2"></i>60 m² superficie</p>
                           </div>
-                          <div class="col-sm-6">
-                            <i class="fa-solid fa-house me-2"></i>Intera casa
+                          <div class="col-sm-6"><p>
+                            <i class="fa-solid fa-house me-2"></i>Intera casa</p>
                           </div>
-                          <div class="col-sm-6">
-                            <i class="fa-solid fa-eye me-2"></i>Vista
+                          <div class="col-sm-6"><p>
+                            <i class="fa-solid fa-eye me-2"></i>Vista</p>
                           </div>
-                          <div class="col-sm-6">
-                            <i class="fa-solid fa-ban-smoking me-2"></i>Camere non fumatori
+                          <div class="col-sm-6"><p>
+                            <i class="fa-solid fa-ban-smoking me-2"></i>Camere non fumatori</p>
+                          </div>
+                          <div class="col-sm-6"><p>
+                            <i class="fa-solid fa-p me-2"></i>Parcheggio gratuito</p>
+                          </div>
+                          <div class="col-sm-6"><p>
+                            <i class="fa-solid fa-mug-hot me-2"></i>Colazione</p>
                           </div>
                       </div>
                   </div>
@@ -81,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-12" data-wow-delay="0.5s">
+            <div class="col-lg-2 col-md-6 col-sm-12">
                 <div class="bg-light rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
@@ -127,148 +141,156 @@
 <!-- Service End -->
 
       <!-- foto Start -->
-<div class="container event py-5">
+<div class="container casa py-5">
     <div class="container">
         <div class="text-center">
             <h1 class="display-5 mb-5">La struttura</h1>
         </div>
         <div class="tab-class text-center">
             <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                {{-- <li class="nav-item p-2">
+                    <a class="d-flex mx-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                        <span class="text-dark text-foto" style="width: 150px;">Tutte</span>
+                    </a>
+                </li> --}}
                 <li class="nav-item p-2">
-                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                        <span class="text-dark" style="width: 150px;">Tutte</span>
+                    <a class="d-flex py-2 mx-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-2">
+                        <span class="text-dark text-foto" style="width: 150px;">Camere</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
-                    <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                        <span class="text-dark" style="width: 150px;">Camere</span>
+                    <a class="d-flex mx-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                        <span class="text-dark text-foto" style="width: 150px;">Bagni</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
-                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                        <span class="text-dark" style="width: 150px;">Bagni</span>
+                    <a class="d-flex mx-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                        <span class="text-dark text-foto" style="width: 150px;">Cucina</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
-                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                        <span class="text-dark" style="width: 150px;">Cucina</span>
-                    </a>
-                </li>
-                <li class="nav-item p-2">
-                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
-                        <span class="text-dark" style="width: 150px;">Esterno</span>
+                    <a class="d-flex mx-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                        <span class="text-dark text-foto" style="width: 150px;">Esterno</span>
                     </a>
                 </li>
             </ul>
             <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade show p-0 active">
+                {{-- <div id="tab-1" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/camera-1.jpg" data-lightbox="camera-1" class="my-auto"></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/camera-1.webp" data-lightbox="camera-1" class="my-auto"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
                                             <h4 class="me-auto">Camere</h4>
-                                            <a href="img/camera-2.jpg" data-lightbox="camera-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/camera-2.webp" data-lightbox="camera-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-3.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
                                             <h4 class="me-auto">Camere</h4>
-                                            <a href="img/camera-3.jpg" data-lightbox="camera-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/camera-3.webp" data-lightbox="camera-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/esterno-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
                                             <h4 class="me-auto">Esterno</h4>
-                                            <a href="img/esterno-1.jpg" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/esterno-1.webp" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/esterno-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/esterno-2.jpg" data-lightbox="esterno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/esterno-2.webp" data-lightbox="esterno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/esterno-3.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/esterno-3.jpg" data-lightbox="esterno-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/esterno-3.webp" data-lightbox="esterno-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-1.jpg" data-lightbox="cucina-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/cucina-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/cucina-1.webp" data-lightbox="cucina-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-2.jpg" data-lightbox="cucina-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/cucina-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/cucina-2.webp" data-lightbox="cucina-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-3.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-3.jpg" data-lightbox="cucina-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/cucina-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/cucina-3.webp" data-lightbox="cucina-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="tab-2" class="tab-pane fade show p-0">
+                </div> --}}
+                <div id="tab-2" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="row g-4">
                                 <div class="col-md-4 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/camera-1.jpg" data-lightbox="camera-1" class="my-auto"></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/camera-1.webp" data-lightbox="camera-1" class="my-auto"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/camera-2.jpg" data-lightbox="camera-2" class="my-auto"></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/camera-2.webp" data-lightbox="camera-2" class="my-auto"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/camera-3.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/camera-3.jpg" data-lightbox="camera-3" class="my-auto"></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/camera-3.webp" data-lightbox="camera-3" class="my-auto"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/camera-4.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/camera-4.webp" data-lightbox="camera-4" class="my-auto"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -281,18 +303,26 @@
                         <div class="col-lg-12">
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/bagno-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/bagno-1.jpg" data-lightbox="bagno-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/bagno-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/bagno-1.webp" data-lightbox="bagno-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/bagno-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/bagno-2.jpg" data-lightbox="bagno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/bagno-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/bagno-2.webp" data-lightbox="bagno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/bagno-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/bagno-3.webp" data-lightbox="bagno-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -305,18 +335,18 @@
                         <div class="col-lg-12">
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-1.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-1.jpg" data-lightbox="cucina-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/cucina-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/cucina-1.webp" data-lightbox="cucina-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-2.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-2.jpg" data-lightbox="cucina-2S" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/cucina-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <a href="img/cucina-2.webp" data-lightbox="cucina-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -329,20 +359,29 @@
                         <div class="col-lg-12">
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-1.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
                                             <h4 class="me-auto">Buffet</h4>
-                                            <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/esterno-1.webp" data-lightbox="esterno-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
-                                    <div class="event-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
-                                        <div class="event-overlay d-flex flex-column p-4">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-2.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
                                             <h4 class="me-auto">Buffet</h4>
-                                            <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            <a href="img/esterno-2.webp" data-lightbox="esterno-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="casa-img position-relative">
+                                        <img class="img-fluid rounded w-100" src="img/esterno-3.webp" alt="">
+                                        <div class="casa-overlay d-flex flex-column p-4">
+                                            <h4 class="me-auto">Buffet</h4>
+                                            <a href="img/esterno-3.webp" data-lightbox="esterno-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>

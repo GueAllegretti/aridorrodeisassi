@@ -8,8 +8,7 @@
             <div class="footer-info">
               <div class="text-center p-3">
                 <h6 class="fw-light">A ridosso dei sassi</h6>
-                <p class="fw-lighter">Vico Lucana 10</p>
-                <p class="fw-lighter">75100 – Matera</p>
+                <p class="fw-lighter">Vico Lucana 10, 75100 – Matera</p>
                 <div class="social-links d-flex align-items-center justify-content-center m-2">
                   <a href="https://www.facebook.com/profile.php?id=61561790943842" target="_blank" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="" target="blank"  class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>

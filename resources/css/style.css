@@ -1,8 +1,9 @@
 :root {
-    --primary: #585123;
+    --primary: #3F612D;
     --secondary: #EEC170;
     --light: white; 
     --dark: #000000;
+    --font-p: "Quicksand", sans-serif;
 }
 
 body, html {
@@ -19,14 +20,21 @@ h4, h5, h6 {
     font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 
-p {
+p, ul, a {
     font-weight: 400 !important;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: var(--font-p) !important;
 }
 
-.bg-breadcrumb{
-    background: linear-gradient(to top, rgba(238, 193, 112, 0.2), rgba(238, 193, 112, 0.8));
+.bg-breadcrumb {
+    background: 
+        linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)),
+        url('/img/masthead.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
 
 /* Button Start  */
 .btn.btn-primary {
@@ -41,7 +49,7 @@ p {
 /* Button End */
 
 
-/*** Navbar Start ***/
+/* Navbar */
 .cg-navbar {
     padding-top: 0;
     background-color: var(--primary);
@@ -49,8 +57,6 @@ p {
 }
 
 .cg-navbar-scroll {
-    /* padding-top: 2%;
-    background-color: transparent; */
     padding-top: .5rem;
     padding-bottom: .5rem;
     transition: .4s;
@@ -64,7 +70,7 @@ p {
 }
 
 .cg-navbar .navbar-nav .nav-item a {
-    color: var(--light);
+    color: var(--dark);
     font-weight: 500;
     font-size: 0.78rem;
 }
@@ -114,7 +120,7 @@ p {
         opacity: 1;
     }
 }
-/*** Navbar End ***/
+/* Navbar End */
 
 /* mast */
 .masthead {
@@ -123,7 +129,7 @@ p {
   }
   
 .masthead {
-background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),url(/img/masthead.jpeg);
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),url(/img/masthead.webp);
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -210,6 +216,7 @@ color: var(--light);
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 30px;
 }
 /* posizione_index end */
 
@@ -243,7 +250,7 @@ color: var(--light);
     position: relative;
     height: 100%;
     min-height: 400px;
-    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(/img/expedition.png);
+    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(/img/expedition.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,7 +388,7 @@ color: var(--light);
     transform: translateY(-50%);
     width: 380px;
     height: 380px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-2.jpg'); 
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-2.webp'); 
     background-size: cover; /* Assicura che l'immagine copra interamente il cerchio */   
     border-radius: 50%;
     pointer-events: none; /* Per evitare interferenze nei clic */
@@ -399,19 +406,27 @@ color: var(--light);
     border-style: solid;
     border-color: #EEC170;
     border-width: 2px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-3.jpg');
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-3.webp');
     background-size: cover; /* Assicura che l'immagine copra interamente il cerchio */    
     border-radius: 50%;
     z-index: -1; /* Assicura che il cerchio piccolo sia sopra il cerchio grande */
 }
 /* casa end */
 
-/*** Events Start ***/
-.event .tab-class .nav-item a.active {
-    background: var(--primary) !important;
+/* foto casa */
+.casa .tab-class .nav-item a.active {
+    background: var(--secondary) !important;
 }
 
-.event .event-img .event-overlay {
+.text-foto {
+    font-family: var(--font-p);
+}
+
+.casa .tab-class .nav-item a {
+    text-decoration: none;
+}
+
+.casa .casa-img .casa-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -424,10 +439,16 @@ color: var(--light);
     z-index: 1;
 }
 
-.event .event-img:hover .event-overlay {
+.casa .imgcasa-img:hover .casa-overlay {
     opacity: 1;
 }
-/*** Events End ***/
+
+.casa-img img {
+    width: 100%;
+    height: 200px; /* Imposta l'altezza desiderata */
+    object-fit: cover; /* Assicura che l'immagine riempia il contenitore senza distorsioni */
+}
+/* foto End */
 
 
 /*** service start ***/
@@ -612,6 +633,7 @@ color: var(--light);
     width: 36px;
     height: 36px;
     transition: 0.3s;
+    text-decoration: none;
   }
   
   .social-links a:hover {

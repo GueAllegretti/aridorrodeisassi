@@ -40,10 +40,6 @@ class PublicController extends Controller
         return view ('escursioni', ['works' => $works]);
     }
 
-    public function posizione() {
-        return view ('posizione');
-    }
-
     public function contact() {
         return view ('contact');
     }
