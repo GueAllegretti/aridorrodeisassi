@@ -18,7 +18,7 @@
                   </a>
                 </div>
                 <a href="{{route('cookies')}}" class="link-footer me-4 fw-light">Cookies Policy</a>
-                <a href="mailto:info@liviimpianti.it?subject=Richiesta informazioni" class="link-footer fw-light">aridossodeisassi@gmail.com</a>
+                <a href="mailto:aridossodeisassi@gmail.com?subject=Richiesta informazioni" class="link-footer fw-light">aridossodeisassi@gmail.com</a>
               </div>
               </div>
             </div>

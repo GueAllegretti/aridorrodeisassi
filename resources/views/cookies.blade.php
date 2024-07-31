@@ -2,26 +2,25 @@
 
 
     <x-slot name="title">Cookies Policy</x-slot>
-    <div class="container-fluid page-header py-5">
-        <div class="container py-5">
-            <h1 class="display-3 text-light mb-3 mt-5 animate__animated animate__slideInDown">Servizi</h1>
-            <nav aria-label="breadcrumb animate__animated animate__slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-light" href="/">Home</a></li>
-                    <li class="breadcrumb-item text-light active" aria-current="page">Cookies Policy</li>
-                </ol>
-            </nav>
-        </div>
-      </div>
+<div class="bg-breadcrumb d-flex align-items-center page-header py-5">
+    <div class="container position-relative d-flex flex-column align-items-center pt-5 pb-2" data-aos="fade">
+      <h2 class="mt-5 display-4">Cookies Policy</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
+            <li class="breadcrumb-item text-dark fw-bold fst-italic active" aria-current="page">Cookies Policy</li>
+        </ol>
+    </nav>
+    </div>
+</div>
 
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-            <div class="cg-text mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
             <h1 class="display-5 mb-5">Informativa sull'uso dei cookie</h1>
         </div>
 
-        <p class="fw-light">Il sito web <b> www.cgimpiantielettrici.it </b> utilizza cookie tecnici per garantire il corretto funzionamento delle procedure e migliorare l'esperienza di uso delle applicazioni online. Il presente documento fornisce informazioni sull'uso dei cookie e di tecnologie similari, su come sono utilizzati dal sito e su come gestirli.
+        <p class="fw-light">Il sito web <b> www.aridossodeisassicasavacanzematera.it </b> utilizza cookie tecnici per garantire il corretto funzionamento delle procedure e migliorare l'esperienza di uso delle applicazioni online. Il presente documento fornisce informazioni sull'uso dei cookie e di tecnologie similari, su come sono utilizzati dal sito e su come gestirli.
         I cookie sono piccoli file di testo che i siti visitati dagli utenti inviano ai loro terminali, ove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva. I cookie delle c.d. "terze parti" vengono, invece, impostati da un sito web diverso da quello che l'utente sta visitando. Questo perché su ogni sito possono essere presenti elementi (immagini, mappe, suoni, specifici link a pagine web di altri domini, ecc.) che risiedono su server diversi da quello del sito visitato.</p>
      
         <br/>

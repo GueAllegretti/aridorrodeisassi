@@ -10,7 +10,7 @@
       <div class="container vh-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-lg-6 text-center">
-                <h1 class="display-1 mb-4 animate__animated animate__zoomIn">A ridosso dei sassi<br> Casa vacanza</h1>
+                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A ridosso dei sassi<br> Casa vacanza</h1>
                 <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">Prenota ora</a>
                 <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">Scopri di più</a>
           </div>
