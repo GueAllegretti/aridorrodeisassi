@@ -11,7 +11,6 @@
                 <p class="fw-lighter">Vico Lucana 10, 75100 – Matera</p>
                 <div class="social-links d-flex align-items-center justify-content-center m-2">
                   <a href="https://www.facebook.com/profile.php?id=61561790943842" target="_blank" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="" target="blank"  class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
                   <a href="http://api.whatsapp.com/send?phone=+393881581971&text=Salve, vorrei avere maggiori informazioni" target="blank" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-whatsapp"></i>
                   </a>
                   <a href="mailto:aridossodeisassi@gmail.com?subject=Richiesta informazioni" target="blank" class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-envelope"></i>

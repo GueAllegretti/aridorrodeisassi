@@ -29,6 +29,15 @@ li {
     list-style: none;
 }
 
+.text-contact {
+    color: var(--secondary);
+}
+
+.border-contact {
+    border: 0.1rem solid var(--primary) !important;
+}
+
+
 .bg-breadcrumb {
     background: 
         linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)),

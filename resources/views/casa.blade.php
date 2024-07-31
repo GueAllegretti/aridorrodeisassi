@@ -32,8 +32,8 @@
                     </div>
                 </div>
                   <div class="col-lg-7">
-                      <h1 class="display-5 mb-4">A Ridosso dei Sassi</h1>
-                      <h6 class="mb-4">Un Rifugio incantevole tra Storia e Comfort</h6>
+                      <h1 class="display-5 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">A Ridosso dei Sassi</h1>
+                      <h6 class="mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Un Rifugio incantevole tra Storia e Comfort</h6>
                       <p class="mb-4">
                         Situata nel cuore di un paesaggio unico, la nostra dimora è il rifugio ideale per chi vuole soggiornare a due passi Sassi.
             
