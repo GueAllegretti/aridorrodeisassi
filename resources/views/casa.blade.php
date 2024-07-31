@@ -56,7 +56,7 @@
                             <i class="fa-solid fa-ban-smoking me-2"></i>Camere non fumatori</p>
                           </div>
                           <div class="col-sm-6"><p>
-                            <i class="fa-solid fa-p me-2"></i>Parcheggio gratuito</p>
+                            <i class="fa-brands fa-product-hunt me-2"></i>Parcheggio gratuito</p>
                           </div>
                           <div class="col-sm-6"><p>
                             <i class="fa-solid fa-mug-hot me-2"></i>Colazione</p>
@@ -79,7 +79,7 @@
                 <div class="bg-light rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
-                            <i class="fa-solid fa-p fa-3x mb-4"></i>
+                            <i class="fa-brands fa-product-hunt fa-3x mb-4"></i>
                             <p class="mb-4">Parcheggio gratuito</p>
                         </div>
                     </div>

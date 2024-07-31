@@ -29,6 +29,7 @@ li {
     list-style: none;
 }
 
+/* contact */
 .text-contact {
     color: var(--secondary);
 }
@@ -36,6 +37,11 @@ li {
 .border-contact {
     border: 0.1rem solid var(--primary) !important;
 }
+
+.contact-form {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+/* contact end */
 
 
 .bg-breadcrumb {
@@ -47,29 +53,14 @@ li {
     background-repeat: no-repeat;
 }
 
-
-
-/* Button Start  */
-.btn.btn-primary {
-    border: 0;
-    background: var(--secondary);
-}
-
-.btn.btn-primary:hover {
-    background: var(--dark) !important;
-    color: var(--light) !important;
-}
-/* Button End */
-
-
 /* Navbar */
-.cg-navbar {
+.rs-navbar {
     padding-top: 0;
     background-color: var(--primary);
     transition: all 0.2s;
 }
 
-.cg-navbar-scroll {
+.rs-navbar-scroll {
     padding-top: .5rem;
     padding-bottom: .5rem;
     transition: .4s;
@@ -77,43 +68,29 @@ li {
     background-color: transparent;
 }
 
-
-.cg-navbar .navbar-nav .nav-item {
+.rs-navbar .navbar-nav .nav-item {
     padding: 0 5px;
 }
 
-.cg-navbar .navbar-nav .nav-item a {
+.rs-navbar .navbar-nav .nav-item a {
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 600 !important;
     font-size: 0.78rem;
 }
 
-.cg-navbar .navbar-nav .nav-item a:hover {
-    background: var(--secondary);
+.rs-navbar .navbar-nav .nav-item a:hover {
+    background: var(--light);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .nav-color-active {
-    text-decoration: underline var(--secondary);
+    color: var(--light) !important;
 }
 
 .nav-color:hover{
-    background: var(--secondary);
-}
-
-.cg-offcanvas {
-    width: 100%;
-    background-color: var(--primary);
-    border-left: 0px;
-    border-right: 0px;
-    text-align: start;
-    font-size: medium;
-}
-
-.offcanvas-backdrop.show {
-    opacity: 0;
+    background: var(--light);
 }
 
 @media (min-width: 1200px) {
@@ -150,6 +127,16 @@ background-repeat: no-repeat;
 .masthead h1 {
 color: var(--light);
 }
+
+.btn.btn-primary {
+    border: 0;
+    background: var(--secondary);
+}
+
+.btn.btn-primary:hover {
+    background: var(--dark) !important;
+    color: var(--light) !important;
+}
 /* mast end */
 
 /* casa_index */
@@ -160,53 +147,46 @@ color: var(--light);
     justify-content: center;
     margin-top: 3rem;
 }
+
 .fade-circle {
     position: absolute;
     top: -30%;
-    right: -190px; /* Spostamento del cerchio verso destra */
+    right: -190px; 
     transform: translateY(-50%);
     width: 380px;
     height: 380px;
     background: radial-gradient(circle, rgba(238, 193, 112, 0) 0%, rgba(238, 193, 112, 0.5) 70%, rgba(238, 193, 112, 1) 100%);
     border-radius: 50%;
-    pointer-events: none; /* Per evitare interferenze nei clic */
+    pointer-events: none; 
     z-index: 0; 
     transform: translateY(0%);
 }
-/* .small-circle {
-    position: absolute;
-    top: 20%; 
-    right: -80px; 
-    width: 200px;
-    height: 200px;
-    border-style: solid;
-    border-color: rgba(238, 193, 112, 1); 
-    border-radius: 50%;
-    z-index: 1;
-} */
 
 .small-circle-second {
     position: absolute;
-    top: 36%; /* Posiziona il cerchio piccolo sopra il cerchio grande */
-    right: -110px; /* Spostamento del cerchio verso destra */
-    width: 340px; /* Diametro del cerchio piccolo */
-    height: 340px; /* Diametro del cerchio piccolo */
+    top: 36%;
+    right: -110px; 
+    width: 340px; 
+    height: 340px;
     background: transparent;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(238, 193, 112, 1); 
     border-radius: 50%;
-    z-index: 1; /* Assicura che il cerchio piccolo sia sopra il cerchio grande */
+    z-index: 1; 
 }
+
 .image-container img {
     position: relative;
-    z-index: 2; /* Assicura che l'immagine sia sopra il cerchio grande e il cerchio piccolo */
-    border-radius: 0.25rem; /* Angoli arrotondati per l'immagine */
+    z-index: 2;
+    border-radius: 0.25rem; 
 }
+
 .text-container {
     position: relative;
-    z-index: 3; /* Garantisce che il testo sia sopra l'immagine e i cerchi */
+    z-index: 3; 
 }
+
 .text-container a {
     display: inline-block;
     margin-top: 20px;
@@ -225,6 +205,7 @@ color: var(--light);
     justify-content: center;
     margin: 0 auto;
 }
+
 .circle-text {
     color: white;
     font-weight: bold;
@@ -252,8 +233,8 @@ color: var(--light);
     position: absolute;
     top: 40%; /* Posiziona il cerchio piccolo sopra il cerchio grande */
     right: -90px; /* Spostamento del cerchio verso destra */
-    width: 200px; /* Diametro del cerchio piccolo */
-    height: 200px; /* Diametro del cerchio piccolo */
+    width: 200px;
+    height: 200px;
     background: rgba(238, 193, 112, 1); 
     border-radius: 50%;
     z-index: -1;
@@ -380,8 +361,8 @@ color: var(--light);
 /* casa */
 .image-container-casa img {
     position: relative;
-    z-index: -2; /* Assicura che l'immagine sia sopra il cerchio grande e il cerchio piccolo */
-    border-radius: 0.25rem; /* Angoli arrotondati per l'immagine */
+    z-index: -2; 
+    border-radius: 0.25rem; 
 }
 
 .image-overlay {
@@ -390,43 +371,40 @@ color: var(--light);
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
-    z-index: -2; /* Overlay sopra l'immagine, sotto gli altri elementi */
+    z-index: -2; 
 }
 
 .fade-circle-casa {
     position: absolute;
     top: -30%;
-    right: -190px; /* Spostamento del cerchio verso destra */
+    right: -190px;
     transform: translateY(-50%);
     width: 380px;
     height: 380px;
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-2.webp'); 
-    background-size: cover; /* Assicura che l'immagine copra interamente il cerchio */   
+    background-size: cover; 
     border-radius: 50%;
-    pointer-events: none; /* Per evitare interferenze nei clic */
+    pointer-events: none; 
     z-index: -1; 
     transform: translateY(0%);
 }
 
 .small-circle-casa {
     position: absolute;
-    top: 36%; /* Posiziona il cerchio piccolo sopra il cerchio grande */
-    right: -110px; /* Spostamento del cerchio verso destra */
-    width: 340px; /* Diametro del cerchio piccolo */
-    height: 340px; /* Diametro del cerchio piccolo */
+    top: 36%; 
+    right: -110px; 
+    width: 340px;
+    height: 340px;
     background: transparent;
     border-style: solid;
     border-color: #EEC170;
     border-width: 2px;
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/img/camera-3.webp');
-    background-size: cover; /* Assicura che l'immagine copra interamente il cerchio */    
+    background-size: cover;
     border-radius: 50%;
-    z-index: -1; /* Assicura che il cerchio piccolo sia sopra il cerchio grande */
+    z-index: -1;
 }
-/* casa end */
 
-/* foto casa */
 .casa .tab-class .nav-item a.active {
     background: var(--secondary) !important;
 }
@@ -458,13 +436,13 @@ color: var(--light);
 
 .casa-img img {
     width: 100%;
-    height: 200px; /* Imposta l'altezza desiderata */
-    object-fit: cover; /* Assicura che l'immagine riempia il contenitore senza distorsioni */
+    height: 200px; 
+    object-fit: cover;
 }
-/* foto End */
+/* casa End */
 
 
-/*** service start ***/
+/* service */
 .service .service-item {
     position: relative;
     height: 100%;
@@ -480,17 +458,17 @@ color: var(--light);
 .service-content-icon i{
     color: var(--secondary);
 }
-/*** Services End ***/
+/* Services End */
 
 /* WORKS */
 .projects .project-content {
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .projects .project-content img {
+.projects .project-content img {
     transition: 0.3s;
-  }
+}
   
   .projects .project-content .project-info {
     opacity: 0;
@@ -529,46 +507,8 @@ color: var(--light);
     transform: scale(1.1);
   }
 
-/*** Menu Start ***/
-.menu .nav-item a.active {
-    background: var(--primary) !important;
-}
 
-.menu .menu-item .border-bottom {
-    border-bottom-style: dashed !important;
-}
-/*** Menu End ***/
-
-/*** Blog Start ***/
-.blog-item {
-    position: relative;
-}
-
-.blog-item img {
-    transition: 0.5s;
-}
-
-.blog-item:hover img {
-    transform: scale(1.3)
-}
-
-.blog-item .blog-content {
-    position: relative;
-    transform: translateY(-50%);
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-}
-
-.blog-item .blog-content a.btn h5 {
-    transition: 0.5s;
-}
-
-.blog-item:hover .blog-content a.btn h5 {
-    color: var(--primary) !important;
-}
-/*** Blog End ***/
-
-
-/*** Team Start ***/
+/* Team Start */
 .team-item {
     width: 100%;
     height: 100%;
@@ -613,13 +553,6 @@ color: var(--light);
 }
 /*** Team End ***/
 
-
-/*** Contact start ***/
-.contact-form {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-}
-/*** Contact End ***/
-
 /* FOOTER */
 .footer {
     color: var(--color-standard);
@@ -663,4 +596,83 @@ color: var(--light);
     color: var(--secondary);
   }
 
+  /* Style the icon bar links */
+  .secondary-icone-social {
+    background: var(--secondary);
+    color: var(--text);
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
 
+.secondary-icone-social:hover{
+    color: black;
+}
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99;
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+  }
+  
+  .facebook {
+    border-top-right-radius: 4px;
+    background: var(--primary);
+    color: white;
+  }
+  
+  .mail {
+    background: var(--primary);
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+
+  .whats {
+    background: var(--secondary);
+    color: white;
+  }
+
+  .first-letter {
+    font-size: 30px;
+    line-height: 0px;
+  }
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 12px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  

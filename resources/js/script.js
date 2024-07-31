@@ -1,9 +1,9 @@
-let navbar = document.querySelector(".cg-navbar")
+let navbar = document.querySelector(".rs-navbar")
 document.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        navbar.classList.remove("cg-navbar-scroll")
+        navbar.classList.remove("rs-navbar-scroll")
     } else{
-        navbar.classList.add("cg-navbar-scroll")
+        navbar.classList.add("rs-navbar-scroll")
     }
 })
 

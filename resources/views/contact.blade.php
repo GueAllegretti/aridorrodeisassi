@@ -43,7 +43,7 @@
                                 <i class="fa fa-phone-alt fa-2x text-contact me-4"></i>
                                 <div>
                                     <h4>Telefono</h4>
-                                    <p class="mb-2"><a href="http://api.whatsapp.com/send?phone=+393881581971&text=Salve, vorrei avere maggiori informazioni" target="blank">(+39) 388 158 1971</a></p>
+                                    <p class="mb-2"><a href="tel:+393881581971" target="blank">(+39) 388 158 1971</a></p>
                                 </div>
                             </div>
                         </div>

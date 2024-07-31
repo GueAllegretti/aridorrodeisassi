@@ -24,28 +24,28 @@
                             <img class="img-fluid rounded-top " src="https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/433257527_795360669280385_2737200115673165512_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CJFlpaMoZKoQ7kNvgHLQa8f&_nc_ht=scontent-fco2-1.xx&gid=ApWdMFQKYB8jar0nnX1kyMp&oh=00_AYB2Z3kmjF4NnbWXO4cmrWDtyBRWzNBDTAY6m1keadz7JQ&oe=66AC2AFF" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 class="text-light">Francesco</h4>
-                                <p class="text-white mb-0">Escursionistica ambientale professionale</p>
+                                <p class="text-white mb-0">Escursionistica ambientale professionale<br> certificatta AIGAE</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="tel:+393881581971" target="blank"><i class="fas fa-phone"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.facebook.com/groups/247501177541396" target="blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href="http://api.whatsapp.com/send?phone=+393881581971&text=Salve, vorrei avere maggiori informazioni" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.instagram.com/expeditionoutdoormatera/" target="blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-6">
                       <div class="text-container">
-                          <h1 class="display-5 mb-4">Tour Privati</h1>
-                          <h6 class="mb-4">nel Parco UNESCO della Murgia Materana</h6>
+                          <h1 class="display-5 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">Tour Privati</h1>
+                          <h6 class="mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">nel Parco UNESCO della Murgia Materana</h6>
                           <p class="mb-4">Alla nostra struttura offriamo la possibilità di organizzare tour privati nel Parco UNESCO della Murgia Materana, culminanti con una vista spettacolare su tutti i Rioni Sassi dal belvedere.</p>
 
                           <p>Il tour ha una durata di 2 ore e mezza e include l'accesso esclusivo a quattro chiese rupestri affrescate, scavate nella roccia. L'itinerario inizia da Jazzo Gattini e prevede un percorso lungo il canyon, dove si potranno ammirare tombe millenarie, antiche cisterne, masserie, luoghi di culto ancestrali e una natura incontaminata. Il tour si conclude con una sosta al belvedere di "Murgia Timone", da cui si gode una vista unica e suggestiva sugli antichissimi Sassi.</p>
                           
                           <ul>
-                              <li>Adulti: 20€ a persona per gruppi di 2 persone; 15€ a persona per gruppi di 3 o più persone.</li>
-                              <li>Ridotto per ragazzi dai 7 ai 14 anni: 12€.</li>
-                              <li>Gratuito per bambini fino ai 7 anni.</li>
+                              <li><i class="fa-solid fa-caret-right me-2"></i>Adulti: 20€ a persona per gruppi di 2 persone; 15€ a persona per gruppi di 3 o più persone.</li>
+                              <li><i class="fa-solid fa-caret-right me-2"></i>Ridotto per ragazzi dai 7 ai 14 anni: 12€.</li>
+                              <li><i class="fa-solid fa-caret-right me-2"></i>Gratuito per bambini fino ai 7 anni.</li>
                           </ul>
                           
                           <p>I prezzi includono il trasporto andata e ritorno al Parco e tutti gli ingressi.</p>
@@ -58,7 +58,7 @@
         <!-- Team End -->
 
 <!-- tour -->
-<section id="tour" class="tour py-5">
+<section id="tour" class="py-5 projects">
     <div class="container py-5">
   
       <div class="section-header text-center">

@@ -15,7 +15,11 @@
 
 <body>
 <x-nav/>
-
+<div class="icon-bar">
+    <a href="https://www.facebook.com/profile.php?id=61561790943842" target="_blank" class="facebook secondary-icone-social d-flex justify-content-center align-items-center" style="outline: none"><i class="fab fa-facebook-f"></i></a>
+    <a href="http://api.whatsapp.com/send?phone=+393881581971&text=Salve, vorrei avere maggiori informazioni" target="blank" class="whats secondary-icone-social text-center d-flex justify-content-center align-items-center"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="mailto:aridossodeisassi@gmail.com?subject=Richiesta informazioni" target="blank" class="mail secondary-icone-social d-flex justify-content-center align-items-center"><i class="fa-regular fa-envelope"></i></a>
+</div>
 
     {{$slot}}
     @include('cookie-consent::index')
