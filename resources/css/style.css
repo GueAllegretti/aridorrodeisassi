@@ -389,6 +389,15 @@ color: var(--light);
     transform: translateY(0%);
 }
 
+@media (max-width: 576px) {
+    .fade-circle-casa {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+        right: -100px; /* Adjust positioning for mobile */
+        top: -20%; /* Adjust vertical positioning if needed */
+    }
+}
+
 .small-circle-casa {
     position: absolute;
     top: 36%; 

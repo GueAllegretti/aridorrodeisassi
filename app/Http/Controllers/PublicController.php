@@ -13,7 +13,24 @@ class PublicController extends Controller
     }
 
     public function casa() {
-        return view ('casa');
+        $fotoCamere = [
+            [
+                'id' => 1, 
+                'alt' => 'camera-1', 
+                'img' => '/img/camera-1.webp'
+            ],
+            [
+                'id' => 2, 
+                'alt' => 'camera-2', 
+                'img' => '/img/camera-2.webp'
+            ],
+            [
+                'id' => 3, 
+                'alt' => 'Lorem', 
+                'img' => '/img/camera-3.webp'
+            ]
+            ];
+        return view ('casa', ['fotoCamere' => $fotoCamere]);
     }
 
     public function escursioni() {
