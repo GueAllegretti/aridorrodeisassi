@@ -42,7 +42,7 @@
                         Le due camere da letto, arredate con gusto e attenzione ai dettagli, offrono spazi accoglienti e rilassanti, dove potrete riposare serenamente dopo una giornata di esplorazioni. La posizione privilegiata della casa, "A ridosso dei sassi", permette di immergersi nella storia e nella cultura locali, con facile accesso alle meraviglie del territorio circostante.
                         <br><br>
                         Scegliendo "A Ridosso dei Sassi," sceglierete un'esperienza indimenticabile, dove il fascino del passato incontra il comfort del presente. Vi aspettiamo per accogliervi con calore e farvi sentire come a casa vostra.</p>
-                      <div class="row g-4 text-dark mb-5">
+                      {{-- <div class="row g-4 text-dark mb-5 d-none d-sm-block">
                           <div class="col-sm-6"><p>
                               <i class="fa-solid fa-house me-2"></i>60 m² superficie</p>
                           </div>
@@ -61,7 +61,7 @@
                           <div class="col-sm-6"><p>
                             <i class="fa-solid fa-mug-hot me-2"></i>Colazione</p>
                           </div>
-                      </div>
+                      </div> --}}
                   </div>
               </div>
           </div>
@@ -176,7 +176,7 @@
                             <div class="row g-4">
                                 @foreach($fotoCamere as $fotoCamera)
       
-                                <x-cardFoto
+                                <x-cardFotoCamere
                                   id="{{$fotoCamera['id']}}"
                                   alt="{{$fotoCamera['alt']}}"
                                   img="{{$fotoCamera['img']}}"
@@ -246,22 +246,22 @@
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="row g-4">
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="casa-img position-relative">
-                                        <img class="img-fluid rounded w-100" src="img/cucina-1.webp" alt="">
-                                        <div class="casa-overlay d-flex flex-column p-4">
-                                            <a href="img/cucina-1.webp" data-lightbox="cucina-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
+                                @foreach($fotoCucina as $fotoCucina)
+      
+                                <x-cardFotoCucina
+                                  id="{{$fotoCucina['id']}}"
+                                  alt="{{$fotoCucina['alt']}}"
+                                  img="{{$fotoCucina['img']}}"
+                                />
+                                @endforeach
+                                {{-- <div class="col-md-6 col-lg-3">
                                     <div class="casa-img position-relative">
                                         <img class="img-fluid rounded w-100" src="img/cucina-2.webp" alt="">
                                         <div class="casa-overlay d-flex flex-column p-4">
                                             <a href="img/cucina-2.webp" data-lightbox="cucina-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

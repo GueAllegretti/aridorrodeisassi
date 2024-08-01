@@ -26,11 +26,34 @@ class PublicController extends Controller
             ],
             [
                 'id' => 3, 
-                'alt' => 'Lorem', 
+                'alt' => 'camera-3', 
                 'img' => '/img/camera-3.webp'
+            ],
+            [
+                'id' => 4, 
+                'alt' => 'camera-3', 
+                'img' => '/img/camera-4.webp'
             ]
             ];
-        return view ('casa', ['fotoCamere' => $fotoCamere]);
+
+            $fotoCucina = [
+                [
+                    'id' => 5, 
+                    'alt' => 'cucina-1', 
+                    'img' => '/img/cucina-1.webp'
+                ],
+                [
+                    'id' => 6, 
+                    'alt' => 'cucina-2', 
+                    'img' => '/img/cucina-2.webp'
+                ],
+                [
+                    'id' => 6, 
+                    'alt' => 'cucina-3', 
+                    'img' => '/img/cucina-3.webp'
+                ]
+                ];
+        return view ('casa', ['fotoCamere' => $fotoCamere], ['fotoCucina' => $fotoCucina]);
     }
 
     public function escursioni() {
