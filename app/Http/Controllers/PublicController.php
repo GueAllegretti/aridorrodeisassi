@@ -60,21 +60,21 @@ class PublicController extends Controller
         $works = [
             [
                 'id' => 1, 
-                'title' => 'Lorem1', 
-                'alt' => 'Lorem', 
-                'img' => '/img/place.png'
+                'title' => 'Cammino materano', 
+                'alt' => 'Cammino_materano', 
+                'img' => '/img/tour-1.jpg'
             ],
             [
                 'id' => 2, 
-                'title' => 'Lorem2', 
-                'alt' => 'Lorem', 
-                'img' => '/img/place.png'
+                'title' => 'Chiese rupestri', 
+                'alt' => 'Chiese_rupestri', 
+                'img' => '/img/tour-2.jpeg'
             ],
             [
                 'id' => 3, 
-                'title' => 'Lorem3', 
-                'alt' => 'Lorem', 
-                'img' => '/img/place.png'
+                'title' => 'Cammino materano', 
+                'alt' => 'Cammino_materano', 
+                'img' => '/img/tour-3.jpg'
             ]
         ];
         return view ('escursioni', ['works' => $works]);

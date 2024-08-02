@@ -35,21 +35,21 @@
                 <div class="text-container">
                     <h1 class="display-5 mb-4">La struttura</h1>
                     <p class="mb-2">A due passi dai Sassi di Matera, la Casa Vacanze "A Ridosso dei Sassi" offre un confortevole alloggio familiare a piano terra con ingresso indipendente e ampio parcheggio gratuito disponibile. <br><br> C'è anche la possibilità di un parcheggio privato a pagamento. L'alloggio è ad uso esclusivo e personale e sono presenti due camere da letto, un soggiorno/cucina e due bagni.</p>
-                    <div class="row mt-5">
-                        <div class="col-md-6 text-center">
-                            <div class="booking d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="booking d-flex align-items-center justify-content-start">
                                 <a href="https://www.booking.com/hotel/it/a-ridosso-dei-sassi.it.html#hp_facilities_box" target="_blank">
                                     <img src="img/bookingcom-1.svg" alt="Booking.com Logo" class="logo">
                                 </a>
-                                <div class="score">9.8</div>
+                                <div class="score">9.8<i class="fa-regular fa-thumbs-up text-primary ms-2"></i></div>
                             </div>
                         </div>
-                        <div class="col-md-6 text-center">
-                            <div class="airbnb d-flex align-items-center justify-content-center">
-                                <a href="https://www.airbnb.com" target="_blank">
+                        <div class="col-md-3 text-center">
+                            <div class="airbnb d-flex align-items-center justify-content-start">
+                                <a href="https://www.airbnb.it/rooms/1195113346285763264?viralityEntryPoint=1&s=76&source_impression_id=p3_1722626452_P3iH0jSPJfCUUzXH" target="_blank">
                                     <img src="img/airbnb.svg" alt="Airbnb Logo" class="logo">
                                 </a>
-                                <div class="score">5/5 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Star_Icon.svg/1024px-Star_Icon.svg.png" alt="Star Icon" class="star-icon"></div>
+                                <div class="score">5/5<i class="fa-regular fa-star text-warning ms-2"></i></div>
                             </div>
                         </div>
                     </div>
