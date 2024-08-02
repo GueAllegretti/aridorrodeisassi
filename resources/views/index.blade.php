@@ -35,6 +35,24 @@
                 <div class="text-container">
                     <h1 class="display-5 mb-4">La struttura</h1>
                     <p class="mb-2">A due passi dai Sassi di Matera, la Casa Vacanze "A Ridosso dei Sassi" offre un confortevole alloggio familiare a piano terra con ingresso indipendente e ampio parcheggio gratuito disponibile. <br><br> C'è anche la possibilità di un parcheggio privato a pagamento. L'alloggio è ad uso esclusivo e personale e sono presenti due camere da letto, un soggiorno/cucina e due bagni.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-6 text-center">
+                            <div class="booking d-flex align-items-center justify-content-center">
+                                <a href="https://www.booking.com/hotel/it/a-ridosso-dei-sassi.it.html#hp_facilities_box" target="_blank">
+                                    <img src="img/bookingcom-1.svg" alt="Booking.com Logo" class="logo">
+                                </a>
+                                <div class="score">9.8</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="airbnb d-flex align-items-center justify-content-center">
+                                <a href="https://www.airbnb.com" target="_blank">
+                                    <img src="img/airbnb.svg" alt="Airbnb Logo" class="logo">
+                                </a>
+                                <div class="score">5/5 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Star_Icon.svg/1024px-Star_Icon.svg.png" alt="Star Icon" class="star-icon"></div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="{{route('casa')}}" class="btn btn-primary py-3 px-5 rounded-pill">Scopri di più<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
@@ -84,7 +102,7 @@
                     <div class="fade-circle-expedition"></div>
                     <div class="small-circle-expedition"></div>
                     <div class="video">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-video="https://youtu.be/ad_qInb1FFw">
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-video="https://fb.watch/tIvPZz11ET/">
                             <span></span>
                         </button>
                     </div>
@@ -100,15 +118,11 @@
     <div class="modal-dialog">
         <div class="modal-content rounded-0">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Video</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- 16:9 aspect ratio -->
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="https://youtu.be/ad_qInb1FFw" id="video" allowfullscreen allowscriptaccess="always"
-                        allow="autoplay"></iframe>
-                </div>
+                <div class="fb-video" data-href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/"></a><p></p>Pubblicato da <a href="https://www.facebook.com/ExpeditionOutdoorMatera">Expedition Outdoor</a> su Domenica 2 giugno 2024</blockquote></div>
             </div>
         </div>
     </div>
