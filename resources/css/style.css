@@ -1,23 +1,28 @@
 :root {
-    --primary: #3F612D;
-    --secondary: #EEC170;
-    --light: white; 
-    --dark: #000000;
+    --primary: #1f1d1d;
+    --secondary: #70cbee;
+    --light: #ffffff;
+    --dark: #6c757d;
     --font-p: "Quicksand", sans-serif;
 }
 
-body, html {
+body {
+    overflow-x: hidden;
+    background: #e9e8f1;
+}
+
+html {
     overflow-x: hidden;
 }
 
 h1, h2, h3 {
     font-weight: 400 !important;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: "Lato", sans-serif;
 }
 
 h4, h5, h6 {
     font-weight: 600 !important;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: "Lato", sans-serif;
 }
 
 p, ul, a {
@@ -41,6 +46,16 @@ li {
 .contact-form {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
+
+/* Stili generali per la visualizzazione desktop */
+.contact-item {
+    align-items: center;
+}
+
+.contact a{
+    color: var(--primary) !important;
+}
+
 /* contact end */
 
 
@@ -75,7 +90,6 @@ li {
 .rs-navbar .navbar-nav .nav-item a {
     color: var(--dark);
     font-weight: 600 !important;
-    font-size: 0.78rem;
 }
 
 .rs-navbar .navbar-nav .nav-item a:hover {
@@ -644,7 +658,7 @@ color: var(--light);
 
 /* FOOTER */
 .footer {
-    color: var(--color-standard);
+    background-color: #1a1a1a;
     font-size: 14px;
     position: relative;
   }
@@ -653,15 +667,17 @@ color: var(--light);
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: var(--font-primary);
-    color: var(--color-standard);
+    color: var(--light);
+  }
+
+  .footer .footer-content .footer-info h6, a {
+    color: var(--light);
   }
   
   .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--color-standard);
+    color: var(--light);
     line-height: 1;
     margin-right: 8px;
     border-radius: 4px;
@@ -682,7 +698,7 @@ color: var(--light);
   
   .credits {
     font-size: 13px;
-    color: var(--secondary);
+    color: #8b9ca3;
   }
 
   /* Style the icon bar links */

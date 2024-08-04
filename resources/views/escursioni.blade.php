@@ -10,7 +10,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
-          <li class="breadcrumb-item text-dark fw-bold fst-italic active" aria-current="page">Escursioni</li>
+          <li class="breadcrumb-item text-dark fw-bold active" aria-current="page">Escursioni</li>
         </ol>
       </nav>
     </div>
@@ -26,9 +26,9 @@
               <h4 class="text-light">Francesco</h4>
               <p class="text-white mb-0">Guida Ambientale Escursionistica professionale<br> certificata AIGAE</p>
               <div class="badge-image">
-                  <img src="img/aigae.jpeg" alt="Badge" class="img-fluid">
+                <img src="img/aigae.jpeg" alt="Badge" class="img-fluid">
               </div>
-          </div>
+            </div>
             <div class="team-icon d-flex flex-column justify-content-center m-4">
               <a class="share btn btn-primary btn-md-square rounded-circle mb-2 d-none d-md-block" href="tel:+393881581971" target="blank"><i class="fas fa-phone"></i></a>
               <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.facebook.com/ExpeditionOutdoorMatera" target="blank"><i class="fab fa-facebook-f"></i></a>
@@ -67,30 +67,30 @@
         </div>
       </div>
     </div>
-<!-- Team End -->
-
-<!-- tour -->
-<section id="tour" class="py-5 projects">
-  <div class="container py-5">
+    <!-- Team End -->
     
-    <div class="section-header text-center">
-      <h2>Dai tour</h2>
-    </div>
+    <!-- tour -->
+    <section id="tour" class="py-5 projects">
+      <div class="container py-5">
+        
+        <div class="section-header text-center">
+          <h2>Dai tour</h2>
+        </div>
+        
+        <div class="row gy-4">
+          @foreach($works as $work)
+          
+          <x-cardWork
+          id="{{$work['id']}}"
+          title="{{$work['title']}}"
+          alt="{{$work['alt']}}"
+          img="{{$work['img']}}"
+          />
+          @endforeach
+        </div>
+        
+      </div>
+    </section>
     
-    <div class="row gy-4">
-      @foreach($works as $work)
-      
-      <x-cardWork
-      id="{{$work['id']}}"
-      title="{{$work['title']}}"
-      alt="{{$work['alt']}}"
-      img="{{$work['img']}}"
-      />
-      @endforeach
-    </div>
     
-  </div>
-</section>
-
-
-</x-layout>
+  </x-layout>

@@ -1,6 +1,6 @@
 <footer id="footer" class="footer">
 
-    <div class="footer-content position-relative bg-light">
+    <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
   

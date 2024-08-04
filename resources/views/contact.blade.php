@@ -9,7 +9,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
-                    <li class="breadcrumb-item text-dark fw-bold fst-italic active" aria-current="page">Contatti</li>
+                    <li class="breadcrumb-item text-dark fw-bold active" aria-current="page">Contatti</li>
                 </ol>
             </nav>
         </div>
