@@ -10,9 +10,9 @@
       <div class="container vh-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-lg-6 text-center">
-                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A ridosso dei sassi<br> Casa vacanza</h1>
-                <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">Prenota ora</a>
-                <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">Scopri di più</a>
+                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A Ridosso dei Sassi<br> Casa vacanza</h1>
+                <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">{{__('ui.Prenota_ora')}}</a>
+                <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">{{__('ui.Scopri_di_più')}}</a>
           </div>
         </div>
       </div>
@@ -33,8 +33,8 @@
             </div>
             <div class="col-lg-7">
                 <div class="text-container">
-                    <h1 class="display-5 mb-4">La struttura</h1>
-                    <p class="mb-2">A due passi dai Sassi di Matera, la Casa Vacanze "A Ridosso dei Sassi" offre un confortevole alloggio familiare a piano terra con ingresso indipendente e ampio parcheggio gratuito disponibile. <br><br> C'è anche la possibilità di un parcheggio privato a pagamento. L'alloggio è ad uso esclusivo e personale e sono presenti due camere da letto, un soggiorno/cucina e due bagni.</p>
+                    <h1 class="display-5 mb-4">{{__('ui.struttura')}}</h1>
+                    <p class="mb-2">{{__('ui.descrizione_1')}} <br><br> {{__('ui.descrizione_2')}}</p>
                     <div class="row">
                         <div class="col-md-3 text-center">
                             <div class="booking d-flex align-items-center justify-content-start">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{route('casa')}}" class="btn btn-primary py-3 px-5 rounded-pill">Scopri di più<i class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{route('casa')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('ui.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
         </div>

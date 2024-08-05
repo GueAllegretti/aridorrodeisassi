@@ -81,4 +81,10 @@ class PublicController extends Controller
     public function cookies() {
         return view ('cookies');
     }
+
+    public function locale($locale)
+    {
+        session()->put('locale', $locale);
+        return redirect()->back();
+    }
 }

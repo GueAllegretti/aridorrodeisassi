@@ -5,4 +5,5 @@
 @import url('/node_modules/animate.css/animate.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css');
+@import '~flag-icon-css/css/flag-icons';
 @import url('./style.css');

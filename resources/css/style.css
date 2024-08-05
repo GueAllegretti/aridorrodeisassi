@@ -20,11 +20,6 @@ h1, h2, h3 {
     font-family: "Lato", sans-serif;
 }
 
-h4, h5, h6 {
-    font-weight: 600 !important;
-    font-family: "Lato", sans-serif;
-}
-
 p, ul, a {
     font-weight: 400 !important;
     font-family: var(--font-p) !important;
@@ -47,15 +42,9 @@ li {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
 
-/* Stili generali per la visualizzazione desktop */
-.contact-item {
-    align-items: center;
-}
-
 .contact a{
     color: var(--primary) !important;
 }
-
 /* contact end */
 
 
