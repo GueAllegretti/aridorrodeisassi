@@ -35,14 +35,21 @@
                     <h1 class="display-5 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">A Ridosso dei Sassi</h1>
                     <h6 class="mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Un Rifugio incantevole tra Storia e Comfort</h6>
                     <p class="mb-4">
-                        Situata nel cuore di un paesaggio unico, la nostra dimora è il rifugio ideale per chi vuole soggiornare a due passi Sassi.
-                        
-                        All'interno, troverete una spaziosa cucina completamente attrezzata, due bagni, dotati di ogni comfort per garantire il massimo del relax durante il vostro soggiorno.
+                        Situata nel cuore di un paesaggio unico, la nostra dimora è il rifugio ideale per chi desidera soggiornare a due passi dai Sassi di Matera. All'interno, troverete una spaziosa cucina completamente attrezzata e due bagni dotati di ogni comfort per garantire il massimo del relax durante il vostro soggiorno.
                         <br><br>
-                        Le due camere da letto, arredate con gusto e attenzione ai dettagli, offrono spazi accoglienti e rilassanti, dove potrete riposare serenamente dopo una giornata di esplorazioni. La posizione privilegiata della casa, "A ridosso dei sassi", permette di immergersi nella storia e nella cultura locali, con facile accesso alle meraviglie del territorio circostante.
+                        Le due camere da letto, arredate con gusto e attenzione ai dettagli, offrono spazi accoglienti e rilassanti, ideali per riposare serenamente dopo una giornata di esplorazioni. I letti moderni e comodissimi sono dotati di doghe in legno e materassi e cuscini in Memory foam di ultima generazione. Inoltre, sono inclusi asciugamani, bagnoschiuma, detersivo per la lavatrice, prodotti e utensili da cucina, tisane, caffè e mappe.
                         <br><br>
-                        Scegliendo "A Ridosso dei Sassi," sceglierete un'esperienza indimenticabile, dove il fascino del passato incontra il comfort del presente. Vi aspettiamo per accogliervi con calore e farvi sentire come a casa vostra.</p>
-                    </div>
+                        La posizione privilegiata della casa, 'A Ridosso dei Sassi', permette di immergersi nella storia e nella cultura locali, con facile accesso alle meraviglie del territorio circostante. In una tranquilla zona con ampio parcheggio pubblico gratuito in centro cittadino, siamo a pochi passi dalla scalinata che conduce al centro storico dei Sassi di Matera (Via Casalnuovo). Nei dintorni troverete ottimi ristoranti, bar, pizzerie, distributori di benzina, farmacie e negozi di vario genere, nonché la fermata dei bus urbani.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-12 mb-4 mb-lg-0">
+                <p class="mb-4">
+                    Siamo una giovane coppia italo-spagnola: Francesco, dottore in beni culturali e guida escursionistica ambientale professionale, e Rocio, architetto. Amiamo viaggiare e accogliere gli ospiti nella nostra meravigliosa ed unica città. Saremo lieti di ospitarvi e di fornirvi tutte le informazioni, i consigli e l'aiuto di cui avrete bisogno. Offriamo anche tour e trekking a prezzi convenienti, con trasporto e guida professionale inclusi. Non esitate a contattarci per qualsiasi informazione o richiesta.
+                    <br><br>
+                    Lingue parlate: Inglese, Spagnolo, Italiano.
                 </div>
             </div>
         </div>
@@ -70,7 +77,7 @@
                             <div class="service-content d-flex align-items-center justify-content-center p-4">
                                 <div class="service-content-icon text-center">
                                     <i class="fa-solid fa-mug-hot fa-3x mb-4"></i>
-                                    <p class="mb-4">Colazione</p>
+                                    <p class="mb-4">Colazione a pagamento</p>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +87,7 @@
                             <div class="service-content d-flex align-items-center justify-content-center p-4">
                                 <div class="service-content-icon text-center">
                                     <i class="fa-solid fa-wheelchair fa-3x mb-4"></i>
-                                    <p class="mb-4">Camere/strutture per ospiti disabili</p>
+                                    <p class="mb-4">Camere/strutture a piano terra</p>
                                 </div>
                             </div>
                         </div>
@@ -109,8 +116,8 @@
                         <div class="bg-light rounded service-item">
                             <div class="service-content d-flex align-items-center justify-content-center p-4">
                                 <div class="service-content-icon text-center">
-                                    <i class="fa-solid fa-paw fa-3x mb-4"></i>
-                                    <p class="mb-4">Animali ammessi</p>
+                                    <i class="fa-solid fa-eye fa-3x mb-4"></i>
+                                    <p class="mb-4">Vista centro storico</p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +169,7 @@
                                         img="{{$fotoCamera['img']}}"
                                         />
                                         @endforeach
-
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +186,7 @@
                                         img="{{$fotoBagno['img']}}"
                                         />
                                         @endforeach
-                                    
+                                        
                                     </div>
                                 </div>
                             </div>

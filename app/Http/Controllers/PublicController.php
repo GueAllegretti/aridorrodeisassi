@@ -35,9 +35,9 @@ class PublicController extends Controller
         ];
 
         $fotoEsterno = [
-            ['id' => 1, 'alt' => 'Esterno-1', 'img' => '/img/Esterno-1.webp'],
-            ['id' => 2, 'alt' => 'Esterno-2', 'img' => '/img/Esterno-2.webp'],
-            ['id' => 3, 'alt' => 'Esterno-3', 'img' => '/img/Esterno-3.webp']
+            ['id' => 1, 'alt' => 'esterno-1', 'img' => '/img/esterno-1.webp'],
+            ['id' => 2, 'alt' => 'esterno-2', 'img' => '/img/esterno-2.webp'],
+            ['id' => 3, 'alt' => 'esterno-3', 'img' => '/img/esterno-3.webp']
         ];
     
         $data = [

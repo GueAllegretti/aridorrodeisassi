@@ -27,6 +27,7 @@
             <li>@include('components.locale', ['lang' => 'en', 'nation' => 'gb'])</li>
             <li>@include('components.locale', ['lang' => 'fr', 'nation' => 'fr'])</li>
             <li>@include('components.locale', ['lang' => 'es', 'nation' => 'es'])</li>
+            <li>@include('components.locale', ['lang' => 'de', 'nation' => 'de'])</li>
           </ul>
         </li>
       </ul>

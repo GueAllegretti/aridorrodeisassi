@@ -2,7 +2,7 @@
 @section('meta_description')
 
 <x-layout>
-  <x-slot name="title">A ridosso dei sassi Casa vacanza Matera</x-slot>
+  <x-slot name="title">A ridosso dei sassi {{__('ui.casa_vacanza')}} Matera</x-slot>
 
 
 <section id="masthead" class="masthead pb-5">
@@ -10,7 +10,7 @@
       <div class="container vh-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-lg-6 text-center">
-                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A Ridosso dei Sassi<br> Casa vacanza</h1>
+                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A Ridosso dei Sassi<br>{{__('ui.casa_vacanza')}}</h1>
                 <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">{{__('ui.Prenota_ora')}}</a>
                 <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">{{__('ui.Scopri_di_più')}}</a>
           </div>
@@ -70,14 +70,14 @@
             </div>
             <div class="col-lg-4 d-flex flex-column align-items-center mb-4">
                 <div class="circle mt-5">
-                    <div class="circle-text"><p class="fw-bold">Posizione</p></div>
+                    <div class="circle-text"><p class="fw-bold">{{__('ui.posizione')}}</p></div>
                 </div>
                 <div class="text-center mt-5">
-                    <p>La Casa Vacanze "A Ridosso dei Sassi" è immersa nella suggestiva cornice dei Sassi di Matera, a pochi passi da Piazza San Pietro Caveoso, offrendo una splendida vista sulle grotte ruprestri che si affacciano sul canyon della Gravina. <br><br> Perditi tra i romantici vicoli di Matera, un museo a cielo aperto, tra le più antiche città del mondo, regalando ambientazioni cinematografiche degne delle pellicole di Pier Paolo Pasolini.</p>
+                    <p>{{__('ui.descrizione_posizione_1')}} <br><br> {{__('ui.descrizione_posizione_2')}} <br><br> {{__('ui.descrizione_posizione_3')}}</p>
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center mb-4">
-                <img src="img/place.png" class="img-fluid rounded" alt="Right Image">
+                <img src="img/esterno-4.webp" class="img-fluid rounded" alt="Right Image">
             </div>
         </div>
     </div>
@@ -91,10 +91,10 @@
         <div class="row align-items-center position-relative">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="text-container">
-                    <h1 class="display-5 mb-4">Tour privati</h1>
-                    <p class="mb-2">Presso la nostra struttura è possibile organizzare Tour privati nel Parco UNESCO della Murgia Materana con finale nel belvedere con vista favolosa su tutti i Rioni Sassi. 
+                    <h1 class="display-5 mb-4">{{__('ui.tour_index_1')}}</h1>
+                    <p class="mb-2">{{__('ui.tour_index_2')}}
                     </p>
-                    <a href="{{route('escursioni')}}" class="btn btn-primary py-3 px-5 rounded-pill">Scopri di più<i class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{route('escursioni')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('ui.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -118,11 +118,11 @@
     <div class="modal-dialog">
         <div class="modal-content rounded-0">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Video</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{__('ui.tour_index_3')}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="fb-video" data-href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/"></a><p></p>Pubblicato da <a href="https://www.facebook.com/ExpeditionOutdoorMatera">Expedition Outdoor</a> su Domenica 2 giugno 2024</blockquote></div>
+                <div class="fb-video" data-href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/"></a><p></p>{{__('ui.tour_index_4')}} <a href="https://www.facebook.com/ExpeditionOutdoorMatera">Expedition Outdoor</a> {{__('ui.tour_index_5')}}</blockquote></div>
             </div>
         </div>
     </div>
