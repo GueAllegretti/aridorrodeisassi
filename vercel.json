@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/api/index.php", "use": "vercel-php@0.5.2" },
+        { "src": "/api/index.php", "use": "vercel-php@0.6" },
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
@@ -27,10 +27,10 @@
         }
     ],
     "env": {
-        "APP_NAME": "aridossodeisassi",
+        "APP_NAME": "aridorrodeisassi",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://aridossodeisassi.vercel.app/",
+        "APP_URL": "https://aridorrodeisassi.it/",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
