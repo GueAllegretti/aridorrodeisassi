@@ -2,7 +2,7 @@
 @section('meta_description')
 
 <x-layout>
-  <x-slot name="title">A ridosso dei sassi {{__('ui.casa_vacanza')}} Matera</x-slot>
+  <x-slot name="title">A ridosso dei sassi {{__('home.casa_vacanza')}} Matera</x-slot>
 
 
 <section id="masthead" class="masthead pb-5">
@@ -10,9 +10,9 @@
       <div class="container vh-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-lg-6 text-center">
-                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A Ridosso dei Sassi<br>{{__('ui.casa_vacanza')}}</h1>
-                <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">{{__('ui.Prenota_ora')}}</a>
-                <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">{{__('ui.Scopri_di_più')}}</a>
+                <h1 class="display-1 mb-4 wow animate__animated animate__fadeInUp">A Ridosso dei Sassi<br>{{__('home.casa_vacanza')}}</h1>
+                <a href="{{route('contact')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animate__animated animate__zoomIn">{{__('home.Prenota_ora')}}</a>
+                <a href="{{route('casa')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animate__animated animate__zoomIn">{{__('home.Scopri_di_più')}}</a>
           </div>
         </div>
       </div>
@@ -33,8 +33,8 @@
             </div>
             <div class="col-lg-7">
                 <div class="text-container">
-                    <h1 class="display-5 mb-4">{{__('ui.struttura')}}</h1>
-                    <p class="mb-2">{{__('ui.descrizione_1')}} <br><br> {{__('ui.descrizione_2')}}</p>
+                    <h1 class="display-5 mb-4">{{__('home.struttura')}}</h1>
+                    <p class="mb-2">{{__('home.descrizione_1')}} <br><br> {{__('home.descrizione_2')}}</p>
                     <div class="row">
                         <div class="col-md-3 text-center">
                             <div class="booking d-flex align-items-center justify-content-start">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{route('casa')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('ui.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{route('casa')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('home.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
         </div>
@@ -70,10 +70,10 @@
             </div>
             <div class="col-lg-4 d-flex flex-column align-items-center mb-4">
                 <div class="circle mt-5">
-                    <div class="circle-text"><p class="fw-bold">{{__('ui.posizione')}}</p></div>
+                    <div class="circle-text"><p class="fw-bold">{{__('home.posizione')}}</p></div>
                 </div>
                 <div class="text-center mt-5">
-                    <p>{{__('ui.descrizione_posizione_1')}} <br><br> {{__('ui.descrizione_posizione_2')}} <br><br> {{__('ui.descrizione_posizione_3')}}</p>
+                    <p>{{__('home.descrizione_posizione_1')}} <br><br> {{__('home.descrizione_posizione_2')}} <br><br> {{__('home.descrizione_posizione_3')}}</p>
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center mb-4">
@@ -91,10 +91,10 @@
         <div class="row align-items-center position-relative">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="text-container">
-                    <h1 class="display-5 mb-4">{{__('ui.tour_index_1')}}</h1>
-                    <p class="mb-2">{{__('ui.tour_index_2')}}
+                    <h1 class="display-5 mb-4">{{__('home.tour_index_1')}}</h1>
+                    <p class="mb-2">{{__('home.tour_index_2')}}
                     </p>
-                    <a href="{{route('escursioni')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('ui.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{route('escursioni')}}" class="btn btn-primary py-3 px-5 rounded-pill">{{__('home.Scopri_di_più')}}<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -118,11 +118,11 @@
     <div class="modal-dialog">
         <div class="modal-content rounded-0">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{__('ui.tour_index_3')}}</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{__('home.tour_index_3')}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="fb-video" data-href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/"></a><p></p>{{__('ui.tour_index_4')}} <a href="https://www.facebook.com/ExpeditionOutdoorMatera">Expedition Outdoor</a> {{__('ui.tour_index_5')}}</blockquote></div>
+                <div class="fb-video" data-href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ExpeditionOutdoorMatera/videos/2455798671287704/"></a><p></p>{{__('home.tour_index_4')}} <a href="https://www.facebook.com/ExpeditionOutdoorMatera">Expedition Outdoor</a> {{__('home.tour_index_5')}}</blockquote></div>
             </div>
         </div>
     </div>

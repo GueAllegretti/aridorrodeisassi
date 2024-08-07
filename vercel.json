@@ -27,10 +27,10 @@
         }
     ],
     "env": {
-        "APP_NAME": "livi-laravel",
+        "APP_NAME": "aridossodeisassi",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://livi-laravel-mdae.vercel.app/",
+        "APP_URL": "https://aridossodeisassi.vercel.app/",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
