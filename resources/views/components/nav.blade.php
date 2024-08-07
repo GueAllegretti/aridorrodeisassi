@@ -9,18 +9,18 @@
           <a class="nav-link fw-bold {{(Route::currentRouteName() == 'index') ? 'active nav-color-active' : ''}}" href="{{route('index')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{(Route::currentRouteName() == 'casa') ? 'active nav-color-active' : ''}}" href="{{route('casa')}}">Struttura</a>
+          <a class="nav-link {{(Route::currentRouteName() == 'casa') ? 'active nav-color-active' : ''}}" href="{{route('casa')}}">{{__('nav.struttura')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{(Route::currentRouteName() == 'escursioni') ? 'active nav-color-active' : ''}}" href="{{route('escursioni')}}">Escursioni</a>
+          <a class="nav-link {{(Route::currentRouteName() == 'escursioni') ? 'active nav-color-active' : ''}}" href="{{route('escursioni')}}">{{__('nav.escursioni')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{(Route::currentRouteName() == 'contact') ? 'active nav-color-active' : ''}}" href="{{route('contact')}}">Contatti</a>
+          <a class="nav-link {{(Route::currentRouteName() == 'contact') ? 'active nav-color-active' : ''}}" href="{{route('contact')}}">{{__('nav.contatti')}}</a>
         </li>
         <!-- Language Dropdown -->
         <li class="nav-item dropdown ms-auto">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Lingua
+            {{__('nav.lingua')}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>@include('components.locale', ['lang' => 'it', 'nation' => 'it'])</li>
