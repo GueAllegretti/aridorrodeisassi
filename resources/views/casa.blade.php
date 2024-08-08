@@ -3,15 +3,15 @@
 
 
 <x-layout>
-    <x-slot name="title">{{__('nav.struttura')}}</x-slot>
+    <x-slot name="title">{{__('generico.struttura')}}</x-slot>
     
     <div class="bg-breadcrumb d-flex align-items-center page-header py-5">
         <div class="container position-relative d-flex flex-column align-items-center pt-5 pb-2" data-aos="fade">
-            <h2 class="mt-5 display-4">{{__('nav.struttura')}}</h2>
+            <h2 class="mt-5 display-4">{{__('generico.struttura')}}</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-dark" href="{{route('index')}}">Home</a></li>
-                    <li class="breadcrumb-item text-dark fw-bold active" aria-current="page">{{__('nav.struttura')}}</li>
+                    <li class="breadcrumb-item text-dark fw-bold active" aria-current="page">{{__('generico.struttura')}}</li>
                 </ol>
             </nav>
         </div>
