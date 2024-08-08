@@ -5,5 +5,6 @@ return [
     'escursioni' => 'Escursioni',
     'contatti' => 'Contatti',
     'lingua' => 'Lingua',
-    'generico_1' => 'Salve, vorrei avere maggiori informazioni'
+    'generico_1' => 'Salve, vorrei avere maggiori informazioni',
+    'generico_2' => 'Richiesta informazioni'
 ];
