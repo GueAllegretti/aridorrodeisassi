@@ -6,7 +6,6 @@
     <meta name="keywords" content="@yield('meta_keywords')">
     <meta name="description" content="@yield('meta_description')">
 
-    {{-- <link rel="stylesheet" href="{{secure_asset('css/app.css')}}"> --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 <title>{{isset($title) ? $title:'A ridosso dei sassi Casa Vacanza Matera'}}</title>
@@ -27,7 +26,6 @@
      
      <x-footer/>
     <!-- JavaScript -->
-    {{-- <script src="{{secure_asset('js/app.js')}}"></script> --}}
     <script src="{{asset('js/app.js')}}"></script>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v20.0" nonce="2y71AYgm"></script>

@@ -1,5 +1,5 @@
-@section('meta_keywords',)
-@section('meta_description', )
+@section('meta_keywords', 'casa vacanza, intero appartamento, sassi di matera, parcheggio gratuito, piano terra')
+@section('meta_description', 'Casa vacanza nel cuore dei Sassi di Matera, inteno appartemento a piano terra con parcheggio gratuito' )
 
 
 <x-layout>

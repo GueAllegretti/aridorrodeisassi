@@ -25,22 +25,22 @@
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <div>
-                            <div class="d-inline-flex w-100 border border-primary border-contact p-4 rounded mb-4">
-                                <i class="fas fa-map-marker-alt fa-2x text-contact me-4"></i>
+                            <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
+                                <i class="fas fa-map-marker-alt fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
                                 <div>
                                     <h4>{{__('contatti.indirizzo')}}</h4>
                                     <p>Vico Lucana 10 75100 Matera, Basilicata</p>
                                 </div>
                             </div>
-                            <div class="d-inline-flex w-100 border border-primary border-contact p-4 rounded mb-4">
-                                <i class="fas fa-envelope fa-2x text-contact me-4"></i>
+                            <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
+                                <i class="fas fa-envelope fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
                                 <div>
                                     <h4>E-mail</h4>
                                     <p class="mb-2"><a href="mailto:aridossodeisassi@gmail.com?subject={{__('generico.generico_2')}}">aridossodeisassi@gmail.com</a></p>
                                 </div>
-                            </div>
-                            <div class="d-inline-flex w-100 border border-primary border-contact p-4 rounded">
-                                <i class="fa fa-phone-alt fa-2x text-contact me-4"></i>
+                            </div>                            
+                            <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
+                                <i class="fa fa-phone-alt fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
                                 <div>
                                     <h4>{{__('contatti.telefono')}}</h4>
                                     <p class="mb-2"><a href="tel:+393881581971" target="blank">(+39) 388 158 1971</a></p>

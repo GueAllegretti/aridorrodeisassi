@@ -1,5 +1,5 @@
-@section('meta_keywords')
-@section('meta_description')
+@section('meta_keywords', 'matera, sassi di matera, casa vacanza')
+@section('meta_description', 'Casa vacanza nei sassi di Matera, interno appartamento con possibilità di escursioni e tour privati nel Parco UNESCO della Murgia Materana')
 
 <x-layout>
   <x-slot name="title">A ridosso dei sassi {{__('home.casa_vacanza')}} Matera</x-slot>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center mb-4">
-                <img src="img/esterno-4.webp" class="img-fluid rounded" alt="Right Image">
+                <img src="img/posizione-2.webp" class="img-fluid rounded" alt="Right Image">
             </div>
         </div>
     </div>

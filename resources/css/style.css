@@ -45,6 +45,40 @@ li {
 .contact a{
     color: var(--primary) !important;
 }
+
+@media (max-width: 576px) {
+    .border-contact {
+        padding: 2rem;
+    }
+
+    .text-contact {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 1000px) {
+    .d-inline-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text-contact {
+        margin-right: 1rem; 
+    }
+
+    .p-4 {
+        padding: 1.5rem; 
+    }
+
+    p {
+        font-size: 0.875rem; 
+    }
+}
 /* contact end */
 
 
@@ -738,33 +772,6 @@ color: var(--light);
     background: var(--secondary);
     color: white;
   }
-
-  .close {
-    position: absolute;
-    right: 32px;
-    top: 12px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-  }
-  .close:hover {
-    opacity: 1;
-  }
-  .close:before, .close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: rgba(212, 167, 98, 0.7);
-  }
-  .close:before {
-    transform: rotate(45deg);
-  }
-  .close:after {
-    transform: rotate(-45deg);
-  }
-  
   .logo {
     width: 40px;
     height: auto;
@@ -779,3 +786,26 @@ color: var(--light);
     margin-top: 10px;
     font-family: var(--font-p);
 }
+
+.cookie-consent {
+    background-color: #000; 
+}
+
+.btn-close-white {
+    width: 24px; 
+    height: 24px; 
+    background-color: #fff; 
+    color: #000; 
+    font-size: 16px; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary a {
+    color: #fff;
+    text-decoration: none;
+}
+
+  

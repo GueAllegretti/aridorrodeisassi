@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'message' => 'Utilizziamo i cookie e altre tecnologie simili per raccogliere dati per migliorare la tua esperienza sul nostro sito, come specificato nella nostra cookie policy.',
-    'agree' => 'Consenti',
-    'disagree' => 'Chiudi',
+    'message' => 'We use cookies and similar technologies to enhance your experience on our site.',
+    'agree' => 'Allow',
+    'disagree' => 'Close',
 ];

@@ -1,5 +1,5 @@
-@section('meta_keywords')
-@section('meta_description')
+@section('meta_keywords', 'escursioni, visite guidate, sassi di matera')
+@section('meta_description', 'Guida escursionista professionale e certificata AIGAE per tour privati nel parco UNESCO della Murgia Materana')
 
 <x-layout>
   <x-slot name="title">{{__('generico.escursioni')}}</x-slot>

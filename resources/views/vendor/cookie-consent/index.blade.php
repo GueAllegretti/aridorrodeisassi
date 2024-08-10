@@ -14,13 +14,17 @@
                 hideCookieDialog();
             }
 
+            function rejectCookies() {
+                setCookie('{{ $cookieConsentConfig['cookie_name'] }}', '0', {{ $cookieConsentConfig['cookie_lifetime'] }});
+                hideCookieDialog();
+            }
+
             function cookieExists(name) {
                 return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
             }
 
             function hideCookieDialog() {
                 const dialogs = document.getElementsByClassName('js-cookie-consent');
-
                 for (let i = 0; i < dialogs.length; ++i) {
                     dialogs[i].style.display = 'none';
                 }
@@ -32,7 +36,8 @@
                 document.cookie = name + '=' + value
                     + ';expires=' + date.toUTCString()
                     + ';domain=' + COOKIE_DOMAIN
-                    + ';path=/{{ config('session.secure') ? ';secure' : null }}'
+                    + ';path=/'
+                    + '{{ config('session.secure') ? ';secure' : null }}'
                     + '{{ config('session.same_site') ? ';samesite='.config('session.same_site') : null }}';
             }
 
@@ -40,14 +45,19 @@
                 hideCookieDialog();
             }
 
-            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+            const agreeButtons = document.getElementsByClassName('js-cookie-consent-agree');
+            for (let i = 0; i < agreeButtons.length; ++i) {
+                agreeButtons[i].addEventListener('click', consentWithCookies);
+            }
 
-            for (let i = 0; i < buttons.length; ++i) {
-                buttons[i].addEventListener('click', consentWithCookies);
+            const disagreeButtons = document.getElementsByClassName('js-cookie-consent-disagree');
+            for (let i = 0; i < disagreeButtons.length; ++i) {
+                disagreeButtons[i].addEventListener('click', rejectCookies);
             }
 
             return {
                 consentWithCookies: consentWithCookies,
+                rejectCookies: rejectCookies,
                 hideCookieDialog: hideCookieDialog
             };
         })();
