@@ -18,7 +18,7 @@
           <a class="nav-link {{(Route::currentRouteName() == 'contact') ? 'active nav-color-active' : ''}}" href="{{route('contact')}}">{{__('generico.contatti')}}</a>
         </li>
         <!-- Language Dropdown -->
-        <li class="nav-item dropdown ms-auto">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{__('generico.lingua')}}
           </a>
