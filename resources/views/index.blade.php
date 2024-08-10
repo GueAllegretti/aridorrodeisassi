@@ -2,7 +2,7 @@
 @section('meta_description', 'Casa vacanza nei sassi di Matera, interno appartamento con possibilità di escursioni e tour privati nel Parco UNESCO della Murgia Materana')
 
 <x-layout>
-  <x-slot name="title">A ridosso dei sassi {{__('home.casa_vacanza')}} Matera</x-slot>
+  <x-slot name="title">A ridosso dei sassi {{__('home.casa_vacanza')}}</x-slot>
 
 
 <section id="masthead" class="masthead pb-5">
