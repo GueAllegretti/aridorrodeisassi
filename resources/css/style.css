@@ -38,10 +38,6 @@ li {
     border: 0.1rem solid var(--primary) !important;
 }
 
-.contact-form {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-}
-
 .contact a{
     color: var(--primary) !important;
 }
@@ -106,13 +102,18 @@ li {
     background-color: transparent;
 }
 
-.rs-navbar .navbar-nav .nav-item {
-    padding: 0 5px;
+.rs-navbar a { 
+    color: var(--dark); 
+    font-weight: 600 !important;
 }
 
-.rs-navbar .navbar-nav .nav-item a {
-    color: var(--dark);
+.rs-navbar-scroll a { 
+    color: #000000; 
     font-weight: 600 !important;
+}
+
+.rs-navbar .navbar-nav .nav-item {
+    padding: 0 5px;
 }
 
 .rs-navbar .navbar-nav .nav-item a:hover {

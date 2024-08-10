@@ -70,7 +70,7 @@
             </div>
             <div class="col-lg-4 d-flex flex-column align-items-center mb-4">
                 <div class="circle mt-5">
-                    <div class="circle-text"><p class="fw-bold">{{__('home.posizione')}}</p></div>
+                    <div class="circle-text"><h2 class="fw-bold">{{__('home.posizione')}}</h2></div>
                 </div>
                 <div class="text-center mt-5">
                     <p>{{__('home.descrizione_posizione_1')}} <br><br> {{__('home.descrizione_posizione_2')}} <br><br> {{__('home.descrizione_posizione_3')}}</p>
