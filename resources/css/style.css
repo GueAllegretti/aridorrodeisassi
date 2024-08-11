@@ -167,7 +167,7 @@ li {
 @media (max-width: 480px) {
     .masthead {
         background-attachment: scroll;
-        background-position: center top; 
+        background-position: left center;
     }
 }
 
