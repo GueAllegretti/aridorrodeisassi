@@ -21,31 +21,46 @@
             <div class="p-5 rounded contact-form">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-7">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.674445168598!2d16.612453875915385!3d40.6591062408523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13477edad1c9fef1%3A0xd0e2fef447c81be9!2sVico%20Lucana%2C%2010%2C%2075100%20Matera%20MT!5e0!3m2!1sit!2sit!4v1722159109117!5m2!1sit!2sit" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.674445168598!2d16.612453875915385!3d40.6591062408523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13477edad1c9fef1%3A0xd0e2fef447c81be9!2sVico%20Lucana%2C%2010%2C%2075100%20Matera%20MT!5e0!3m2!1sit!2sit!4v1722159109117!5m2!1sit!2sit" width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <div>
-                            <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
-                                <i class="fas fa-map-marker-alt fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
-                                <div>
-                                    <h4>{{__('contatti.indirizzo')}}</h4>
-                                    <p>Vico Lucana 10 75100 Matera, Basilicata</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Vico+Lucana+10,+75100+Matera,+Basilicata" target="_blank">
+                                <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
+                                    <i class="fas fa-map-marker-alt fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
+                                    <div>
+                                        <h4>{{__('contatti.indirizzo')}}</h4>
+                                        <p>Vico Lucana 10 75100 Matera, Basilicata</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                            
+                            <a href="mailto:aridossodeisassi@gmail.com?subject={{__('generico.generico_2')}}">
                             <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
                                 <i class="fas fa-envelope fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
                                 <div>
                                     <h4>E-mail</h4>
-                                    <p class="mb-2"><a href="mailto:aridossodeisassi@gmail.com?subject={{__('generico.generico_2')}}">aridossodeisassi@gmail.com</a></p>
+                                    <p class="mb-2">aridossodeisassi@gmail.com</p>
                                 </div>
-                            </div>                            
+                            </div>  
+                        </a>          
+                            <a href="tel:+393881581971" target="blank">                
                             <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
                                 <i class="fa fa-phone-alt fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
                                 <div>
                                     <h4>{{__('contatti.telefono')}}</h4>
-                                    <p class="mb-2"><a href="tel:+393881581971" target="blank">(+39) 388 158 1971</a></p>
+                                    <p class="mb-2">(+39) 388 158 1971</p>
+                                </div>
+                            </div></a>
+                            <a href="http://api.whatsapp.com/send?phone=+393881581971&text={{__('generico.generico_1')}}" target="blank">
+                                <div class="d-inline-flex flex-column flex-sm-row w-100 border border-primary border-contact p-4 rounded mb-4">
+                                <i class="fa-brands fa-whatsapp fa-2x text-contact me-4 mb-3 mb-sm-0"></i>
+                                <div>
+                                    <h4>Whatsapp</h4>
+                                    <p class="mb-2">(+39) 388 158 1971</p>
                                 </div>
                             </div>
+                        </a>
                         </div>
                     </div>
                 </div>
