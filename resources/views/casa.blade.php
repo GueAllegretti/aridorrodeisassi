@@ -53,6 +53,20 @@
                 </div>
             </div>
         </div>
+        <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="image-container">
+                            <img src="img/airbnbhost.webp" class="rounded img-thumbnail" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="image-container">
+                            <img src="img/bookingscore.webp" class="rounded img-thumbnail" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- About End -->
         
         <!-- Service Start -->

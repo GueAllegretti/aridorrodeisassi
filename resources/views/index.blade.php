@@ -41,7 +41,7 @@
                                 <a href="https://www.booking.com/hotel/it/a-ridosso-dei-sassi.it.html#hp_facilities_box" target="_blank">
                                     <img src="img/bookingcom-1.svg" alt="Booking.com Logo" class="logo">
                                 </a>
-                                <div class="score">9.8<i class="fa-regular fa-thumbs-up text-primary ms-2"></i></div>
+                                <div class="score">9.4<i class="fa-regular fa-thumbs-up text-primary ms-2"></i></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
