@@ -55,11 +55,18 @@
             </div>
             <div class="col-md-12 text-start">
               <p>{{__('escursioni.social')}}
-                <a href="https://www.getyourguide.it/matera-l1060/esplora-il-parco-unesco-della-murgia-materana-t649609/?ranking_uuid=2bb6f599-54a5-4e33-8dc0-849d1dd92080" target="_blank">
-                  <img src="img/gyg.png" alt="get_your_guide_Logo" class="logo">
+                <a href="https://www.viator.com/it-IT/tours/Matera/Shared-tour-in-the-UNESCO-Park-of-Murgia-Materana/d22632-475519P2" target="_blank">
+                  <img src="img/viatour.png" alt="viatour_logo" class="logo" style="
+                  width: 85px;
+              ">
                 </a>
+                <a href="https://camminomaterano.it/attivita/142/a-ridosso-dei-sassi" target="_blank">
+                  <img src="img/cammino_materano.png" alt="cammino_materano_logo" class="logo" style="
+                  width: 80px;
+              ">
                 <a href="https://www.freetour.com/it/matera/exploring-the-unesco-park-of-the-murgia-materana" target="_blank">
                   <img src="img/logo-freetour.jpg" alt="free_tour_logo" class="logo">
+                </a>
                 </a>
               </p>
             </div>
