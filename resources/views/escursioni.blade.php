@@ -65,9 +65,9 @@
                   width: 80px;
               ">
               </a>
-                <a href="https://www.freetour.com/it/matera/exploring-the-unesco-park-of-the-murgia-materana" target="_blank">
-                  <img src="img/logo-freetour.jpg" alt="free_tour_logo" class="logo">
-                </a>
+              <a href="https://www.getyourguide.it/matera-l1060/esplora-il-parco-unesco-della-murgia-materana-t649609/?ranking_uuid=2bb6f599-54a5-4e33-8dc0-849d1dd92080" target="_blank">
+                <img src="img/gyg.png" alt="get_your_guide_Logo" class="logo">
+              </a>
               </p>
             </div>
           </div>
