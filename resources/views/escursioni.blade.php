@@ -64,9 +64,9 @@
                   <img src="img/cammino_materano.png" alt="cammino_materano_logo" class="logo" style="
                   width: 80px;
               ">
+              </a>
                 <a href="https://www.freetour.com/it/matera/exploring-the-unesco-park-of-the-murgia-materana" target="_blank">
                   <img src="img/logo-freetour.jpg" alt="free_tour_logo" class="logo">
-                </a>
                 </a>
               </p>
             </div>
